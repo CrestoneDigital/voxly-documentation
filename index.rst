@@ -10,4 +10,5 @@ Table of Contents
    license
    privacy
    sla
+   setup
    
