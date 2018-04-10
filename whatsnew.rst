@@ -5,3 +5,9 @@ Welcome to the February 2018 release of Voxly.  In this release we offer support
 
 - RSS & Atom News Feeds - Allows supported voice enabled devices to ask questions related to the news feeds.
 - Events Manager - Allows supported voice enabled devices to ask questions about events.
+
+===========================
+This is what's new in April
+===========================
+
+.. Comment
