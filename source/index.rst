@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. note:: Lorem ipsum dolor sit amet, ea amet luptatum vivendum vix, summo dicunt comprehensam mea eu, melius inimicus eos id. Duo mutat sanctus ea, dolor tractatos usu in.
+
 Welcome to VoxlyDocs's documentation!
 =====================================
 
@@ -11,27 +13,17 @@ Welcome to VoxlyDocs's documentation!
    :caption: Contents:
 
    intro
-   settings
-   news
-   events
-   faqs
-   history
+   compatibleDevices
+   connectors
+   features
+   guides
+   examples
+   marketing
+   releaseNotes
+   glossary
+   support
+   privacyPolicy
+   pubSkillsAct
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
-Table of Contents
-==================
-
-.. toctree::
-   :maxdepth: 2
-
-   whatsnew
-   license
-   privacy
-   sla
-   setup
