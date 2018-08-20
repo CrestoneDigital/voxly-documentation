@@ -6,6 +6,7 @@ Guides
 
    gettingStartedGuides
    newsGuides
+   eventsGuides
    questionsGuides
    historyGuides
    settingsGuides

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Settings &mdash; VoxlyDocs 0.0.1 documentation</title>
+  <title>Events &mdash; VoxlyDocs 0.0.1 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="VoxlyDocs 0.0.1 documentation" href="index.html"/>
         <link rel="up" title="Guides" href="guides.html"/>
-        <link rel="next" title="Connectors" href="connectorsGuides.html"/>
-        <link rel="prev" title="History" href="historyGuides.html"/> 
+        <link rel="next" title="Questions" href="questionsGuides.html"/>
+        <link rel="prev" title="News" href="newsGuides.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -90,17 +90,16 @@
 <li class="toctree-l1 current"><a class="reference internal" href="guides.html">Guides</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="gettingStartedGuides.html">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="newsGuides.html">News</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eventsGuides.html">Events</a></li>
-<li class="toctree-l2"><a class="reference internal" href="questionsGuides.html">Questions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="historyGuides.html">History</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#slots-settings">Slots Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#add-value">Add Value</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#delete-value">Delete Value</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#delete-synonym">Delete Synonym</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#update-alexa">Update Alexa</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Events</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-event">Create Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-event">Edit Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-event">Delete Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features-within-events-page">Features Within Events Page</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="questionsGuides.html">Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="historyGuides.html">History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settingsGuides.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="connectorsGuides.html">Connectors</a></li>
 </ul>
 </li>
@@ -143,11 +142,11 @@
       
           <li><a href="guides.html">Guides</a> &raquo;</li>
       
-    <li>Settings</li>
+    <li>Events</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/settingsGuides.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/eventsGuides.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,74 +156,96 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="settings">
-<h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="slots-settings">
-<h2>Slots Settings<a class="headerlink" href="#slots-settings" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="add-value">
-<h2>Add Value<a class="headerlink" href="#add-value" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><ol class="arabic simple">
+  <div class="section" id="events">
+<h1>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="create-event">
+<h2>Create Event<a class="headerlink" href="#create-event" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Click &#8220;+ Events&#8221;</p>
+</li>
+<li><p class="first">Event field - Enter name of event here.</p>
+</li>
+<li><p class="first">Category - Choose event category</p>
+</li>
+<li><p class="first">Areas - Select the areas (cities) in which the event will take place</p>
+</li>
 <li><dl class="first docutils">
-<dt>Select the Slot you would like to enter value within.</dt>
-<dd><ul class="first last">
-<li>This step only needs to be done when if value being entered does not belong in current slot choosen.</li>
+<dt>Location of event - Enter event address, specific building, or cross streets</dt>
+<dd><ul class="first last simple">
+<li>This information will not be spoken to a user, rather it will be displayed if using a smart speaker with a screen.</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><dl class="first docutils">
-<dt>Click &#8220;+ Value&#8221; (top right)</dt>
-<dd><ul class="first last">
-<li>A new row will appear.</li>
-</ul>
-</dd>
-</dl>
+<li><p class="first">Voice Message - Type event description here.</p>
 </li>
-<li><dl class="first docutils">
-<dt>Fill out Value field</dt>
-<dd><ul class="first last">
-<li>This field is dependent of the slot. This Value can be a verb (find, search...etc.), the name of a city or county, a department or office of the city/county. . .etc.</li>
-<li><dl class="first docutils">
-<dt>To add a synonym click within the snynonym colum next to the desired value. After typing the word click the comma key to finish adding synonym.</dt>
-<dd><em>Synonyms can help address a greater range of ways a user may ask a question.</em></dd>
-</dl>
+<li><p class="first">Display Message - Event description typed in this field will be displayed on a screen.</p>
 </li>
-</ul>
-</dd>
-</dl>
+<li><p class="first">Start Date - Select the date the event will begin.</p>
 </li>
-<li>Click Save (top left)</li>
-</ol>
-</div></blockquote>
-</div>
-<div class="section" id="delete-value">
-<h2>Delete Value<a class="headerlink" href="#delete-value" title="Permalink to this headline">¶</a></h2>
+<li><p class="first">End Date - Select the last day the event will be taking place.</p>
+</li>
+<li><p class="first">Approved Box - Click this box when the event is ready to be communicated. If the box is left unchecked the event is still saved and can be edited, it will not be spoken on the skill until marked as approved.</p>
 <blockquote>
-<div><ul>
-<li><p class="first">Click the &#8220;X&#8221; at the end of the row of the desire value.</p>
-<blockquote>
-<div><p><em>When mouse hovers over &#8220;X&#8221; Delete Entry will appear</em></p>
+<div><p><em>Values found within drop down lists would have been created within the Slots page under Settings. If a value is not found admin with access may add a new value in the Slots page within Settings.</em></p>
 </div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </div>
-<div class="section" id="delete-synonym">
-<h2>Delete Synonym<a class="headerlink" href="#delete-synonym" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><ul class="simple">
-<li>Click desired synonym colum</li>
-<li>Xs will appear net to synonyms. Click on the X of the synonym(s) you owuld like to delete.</li>
-</ul>
-</div></blockquote>
-</div>
-<div class="section" id="update-alexa">
-<h2>Update Alexa<a class="headerlink" href="#update-alexa" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="edit-event">
+<h2>Edit Event<a class="headerlink" href="#edit-event" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Once there is at least once value in each slot category you can update Alexa.</li>
-<li>This update allows the skill to be built and testing to commence.</li>
+<li>Click on your desired event will open a side panel to be used to edit or delete the event.</li>
+<li>Event will appear highlight and you will see event details within side panel.</li>
+<li>Click &#8220;Update Button&#8221; when editing is completed, or changes will not be saved.</li>
+</ul>
+</div>
+<div class="section" id="delete-event">
+<h2>Delete Event<a class="headerlink" href="#delete-event" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Click on desired event to open side panel</li>
+<li><dl class="first docutils">
+<dt>Click Delete button at the bottom of panel</dt>
+<dd><em>One click deletes event</em></dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="features-within-events-page">
+<h2>Features Within Events Page<a class="headerlink" href="#features-within-events-page" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>&#8220;+&#8221; Button</dt>
+<dd><ul class="first last">
+<li>Expands view of each event</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Play Button</dt>
+<dd><ul class="first last">
+<li>Allows a sample of story to be heard</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Filter Evnets By Status</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Clcik on buttons on the bottom right of page</dt>
+<dd><ul class="first last">
+<li>All | Pending | Approved</li>
+<li>View of page will shift to display selected type</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 </div>
@@ -236,10 +257,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="connectorsGuides.html" class="btn btn-neutral float-right" title="Connectors" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="questionsGuides.html" class="btn btn-neutral float-right" title="Questions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="historyGuides.html" class="btn btn-neutral" title="History" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="newsGuides.html" class="btn btn-neutral" title="News" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -36,7 +36,7 @@
     <link rel="top" title="VoxlyDocs 0.0.1 documentation" href="index.html"/>
         <link rel="up" title="Guides" href="guides.html"/>
         <link rel="next" title="History" href="historyGuides.html"/>
-        <link rel="prev" title="News" href="newsGuides.html"/> 
+        <link rel="prev" title="Events" href="eventsGuides.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -90,7 +90,15 @@
 <li class="toctree-l1 current"><a class="reference internal" href="guides.html">Guides</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="gettingStartedGuides.html">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="newsGuides.html">News</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eventsGuides.html">Events</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Questions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-question-and-answer">Create Question and Answer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-question-and-answer-pulling-from-open-source">Create Question and Answer - Pulling from Open Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-faq">Edit FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-faq">Delete FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features-within-faqs-grid">Features Within FAQs Grid</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="historyGuides.html">History</a></li>
 <li class="toctree-l2"><a class="reference internal" href="settingsGuides.html">Settings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="connectorsGuides.html">Connectors</a></li>
@@ -103,15 +111,6 @@
 <li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacyPolicy.html">Privacy Policy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pubSkillsAct.html">Published Skills/Actions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="events.html">Events</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faqs.html">Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="license.html">License Agreement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sla.html">Service Level Agreement</a></li>
-<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
 </ul>
 
             
@@ -160,6 +159,158 @@
             
   <div class="section" id="questions">
 <h1>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="create-question-and-answer">
+<h2>Create Question and Answer<a class="headerlink" href="#create-question-and-answer" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Choose question type</dt>
+<dd><ul class="first last simple">
+<li>How | When | Where | What</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Fill out question template</dt>
+<dd><ul class="first simple">
+<li>Select Office the question is addressing</li>
+<li><dl class="first docutils">
+<dt>Select Verb - the action of the question (ex. Find, search, fill, apply ...ect.)</dt>
+<dd><em>Multiple verbs can be choosen, if fitting to question being established</em></dd>
+</dl>
+</li>
+<li>Select Category - subject of FAQ</li>
+<li>Second Category - select additional subcategory</li>
+</ul>
+<p class="last"><em>Slots filled within the template give Alexa context to search for information</em></p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Fill out Answer - FAQ Response</dt>
+<dd><ul class="first last simple">
+<li>Card Title - Title of display message (how to, where to, ...etc.)</li>
+<li>Voice Message - Type answer to FAQ to be spoken</li>
+<li>Display Message - Type answer to FAW that will be displayed</li>
+<li>Speak Text button allows Voice Messgae to be tested</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Approved</dt>
+<dd><ul class="first simple">
+<li>Click box to make the answer to the FAQ available to your Alexa skill.</li>
+<li>If box is left unchecked the created response will be saved and can be edited.</li>
+</ul>
+<p class="last"><em>Question will not be acknowledge by your skill until approved</em></p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Click Add</dt>
+<dd><ul class="first simple">
+<li>Surves as save button. Will add question and answer to FAQs, will not add to skill (approve check-box adds to skill).</li>
+</ul>
+<img alt="_images/FAQs.png" class="last" src="_images/FAQs.png" />
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="create-question-and-answer-pulling-from-open-source">
+<h2>Create Question and Answer - Pulling from Open Source<a class="headerlink" href="#create-question-and-answer-pulling-from-open-source" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Follow steps 1, 2, &amp; 3 above, prior to checking Approved</li>
+</ul>
+<ol class="arabic simple">
+<li>Connector - Select open source</li>
+<li>Api Endpoint - Input table/dataset</li>
+<li>Advanced Query - Select query needed to retrieve secified dataset</li>
+</ol>
+<ul class="simple">
+<li>Complete steps 4 &amp; 5 above</li>
+</ul>
+</div>
+<div class="section" id="edit-faq">
+<h2>Edit FAQ<a class="headerlink" href="#edit-faq" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Double click desired FAQ</li>
+<li>Once changes are made, Click Update</li>
+</ul>
+</div>
+<div class="section" id="delete-faq">
+<h2>Delete FAQ<a class="headerlink" href="#delete-faq" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Double click desired FAQ</li>
+<li><dl class="first docutils">
+<dt>Click delete button</dt>
+<dd><ul class="first last">
+<li>A toast will appear to verify you truly would like to delete FAQ</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="features-within-faqs-grid">
+<h2>Features Within FAQs Grid<a class="headerlink" href="#features-within-faqs-grid" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Filter FAQs</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>FAQ Types</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Click buttons located on top of grid or use search bar</dt>
+<dd><ul class="first last">
+<li>All | How | What | Where | When</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>FAQ Status</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Click on buttons on the bottom right of grid</dt>
+<dd><ul class="first last">
+<li>All | Pending | Approved</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>&#8220;+&#8221; button</dt>
+<dd><ul class="first last">
+<li>Expands view of each FAQ</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Play button</dt>
+<dd><ul class="first last">
+<li>Allows response to be heard</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
 </div>
 
 
@@ -172,7 +323,7 @@
         <a href="historyGuides.html" class="btn btn-neutral float-right" title="History" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="newsGuides.html" class="btn btn-neutral" title="News" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="eventsGuides.html" class="btn btn-neutral" title="Events" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
