@@ -1,5 +1,5 @@
-Settings
-========
+Settings Guides
+===============
 
 --------------
 Slots Settings

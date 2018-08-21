@@ -125,6 +125,8 @@ Please see below for futher examples.
 
 *Values created within this page will give content to choose from slot categories when creating/editing FAQs and Events*
 
+You can see Slots Settings Guides here: :ref:`Settings Guides`
+
 ===========
 Integration
 ===========

@@ -6,4 +6,4 @@ place by them. The Events section allows you to manually enter events with detai
 
 .. image:: ./images/Events.png
 
-Go to Events Guides - : `Events`_
+You can see Events Guides here: :ref:`Events Guides`

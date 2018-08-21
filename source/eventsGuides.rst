@@ -1,5 +1,5 @@
-Events
-======
+Events Guides
+=============
 
 ============
 Create Event
