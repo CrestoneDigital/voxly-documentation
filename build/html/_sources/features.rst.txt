@@ -6,6 +6,6 @@ Features
 
    news
    events
-   faqs
+   questions
    history
    settings
