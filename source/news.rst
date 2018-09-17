@@ -17,3 +17,5 @@ Functions Within News Page
     * Expands view of each news story 
 * Play Button   
     * Allows a sample of story to be heard
+
+You can see News Guides here: :ref:`News Guides`

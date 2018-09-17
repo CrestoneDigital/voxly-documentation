@@ -25,3 +25,5 @@ Features Within History
 
 * Play button   
     * Allows you to sample the question aubidly 
+
+You can see History Guides here: :ref:`History Guides`
