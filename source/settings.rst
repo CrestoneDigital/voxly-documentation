@@ -138,6 +138,22 @@ Integration
 
     *Specific to helping pull events and FAQ information*
 
+============
+Manage Users
+============
 
+=====
+Roles
+=====
 
+==========
+Events Tab
+==========
 
+=======
+Intents
+=======
+
+========
+Services
+========
