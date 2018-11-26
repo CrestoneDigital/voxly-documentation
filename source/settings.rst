@@ -15,15 +15,15 @@ General Tab
 Invocation Name
 ---------------
 
-* The invocation name is how your skill will be invoked by users. Also known as wake word.
+* The invocation name is how your skill will be invoked by users. Also known as wake word. It is recommended to make the invocation name two words.
 
 ----------------
-Alexa Skill Id
+Alexa Skill ID
 ----------------
 
-* This ID is unique to each tennants skill. This is how the lambda will register your specific skill.
-* You will enter the skill id associated with the Amazon Alexa skill you have created. 
-    * For instructions on setting up your Alexa skill account please see blank section
+* This ID is unique for each tenants' skill. This is how the server will register your specific skill.
+* You will enter the skill ID associated with the Amazon Alexa skill you have created. 
+*For instructions on setting up your Alexa skill account please see blank section*
 
 ---------------
 Welcome Message

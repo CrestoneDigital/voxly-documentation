@@ -7,7 +7,7 @@ Features
    home
    news
    events
-   questions
+   interactions
    history
    deployChanges
    settings

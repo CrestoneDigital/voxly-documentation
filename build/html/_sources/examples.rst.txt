@@ -6,6 +6,6 @@ Examples
 
    newsExamples
    eventsExamples
-   questionsExamples
+   interactionExamples
 
 
