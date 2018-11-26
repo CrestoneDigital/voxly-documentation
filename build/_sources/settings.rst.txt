@@ -8,7 +8,11 @@ Include paragraph about settings
 General Tab
 ===========
 
-.. image:: ./images/settings_generalsetup.png
+.. image:: ./images/settings_general_1.png
+
+.. image:: ./images/settings_general_2.png
+
+.. image:: ./images/settings_general_3.png
 
 
 ---------------
@@ -17,33 +21,20 @@ Invocation Name
 
 * The invocation name is how your skill will be invoked by users. Also known as wake word. It is recommended to make the invocation name two words.
 
-----------------
-Alexa Skill ID
-----------------
+-------------------------
+Alexa Skill and Google ID
+-------------------------
 
 * This ID is unique for each tenants' skill. This is how the server will register your specific skill.
-* You will enter the skill ID associated with the Amazon Alexa skill you have created. 
+* You will enter the skill ID associated with the Amazon Alexa skill you have created.
+
 *For instructions on setting up your Alexa skill account please see blank section*
-
----------------
-Welcome Message
----------------
-
-* This message will be spoken to users upon initially starting the skill. 
-* The purpose of this message is to welcome your users and to inform them of the information they can gain through your skill. 
 
 ----------------
 Reprompt Message
 ----------------
 
 * This message will be relayed to a user when their questions was not understood. Meaning, Alexa understood she was spoken to but could not make out what was asked.
-
--------------
-Help Message
--------------
-
-* Craft a response to help instruct your users in the most effective way to gain a response from your skill. 
-* Best phrases to model or examples of questions they can ask are suggested to use in this message.
 
 -----------------
 Speak Text Button

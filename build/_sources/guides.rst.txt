@@ -8,6 +8,7 @@ Guides
    newsGuides
    eventsGuides
    interactionGuides
-   historyGuides
+   insightsGuides
    settingsGuides
    connectorsGuides
+   activityGuides

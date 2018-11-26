@@ -1,9 +1,9 @@
-History Guides
-==============
+Insights Guides
+===============
 
-=================
-Search in History
-=================
+==================
+Search in Insights
+==================
  Questions will display according to given values.
 
 * Intent - Select intent from the drop down menu

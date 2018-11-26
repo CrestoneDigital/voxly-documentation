@@ -8,7 +8,8 @@ Features
    news
    events
    interactions
-   history
+   insights
+   activity
    deployChanges
    settings
    help
