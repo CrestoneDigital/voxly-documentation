@@ -154,8 +154,9 @@
             
   <div class="section" id="interactions">
 <h1>Interactions<a class="headerlink" href="#interactions" title="Permalink to this headline">¶</a></h1>
-<p>This section was designed to best assist you to create and edit FAQs responses. Using values, created within the Slots section in Settings, you will identify the information
-your community members will be requesting. You will have the ability to type the response to the FAQ and connect any open source data to communicate.</p>
+<p>This section was designed to best assist you to create and edit interactions. Using values, created within the Slots section in Settings, you will identify the information
+your community members will be requesting. You will have the ability to type the response to the interaction and connect any open source data to communicate.</p>
+<p>Every skill starts with two interactions: Help and Welcome. Specify the skill help and welcome messages.</p>
 <img alt="_images/FAQGrid.png" src="_images/FAQGrid.png" />
 <p><strong>Interaction Caching</strong></p>
 <p>What is question caching?  Question caching is the process of saving the response to a question.  This saved response is then used the next time that same question is asked.  By saving certain responses we improve performance (response time) and resource consumption (reduced database access and server load).  Response times are improved because we already have the answer before the question is asked.  Resource consumption is reduced because we do not need to query the database for our response and the server is freed up to handle other requests improving response times.  Responses that are saved have a time to live (ttl).  The time to live (ttl) is used to determine how long a saved response should be used.  The saved response is deleted after the time to live (ttl) expires.  When any questions are editing in the manager and saved any cached results related to that question is also cleared out in order to show the latest information.  This is also true for when New Feeds or Event Calendars are updated.</p>
