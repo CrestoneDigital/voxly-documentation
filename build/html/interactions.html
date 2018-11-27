@@ -90,7 +90,11 @@
 <li class="toctree-l2"><a class="reference internal" href="home.html">Home</a></li>
 <li class="toctree-l2"><a class="reference internal" href="news.html">News</a></li>
 <li class="toctree-l2"><a class="reference internal" href="events.html">Events</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Interactions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Interactions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#features-within-interaction-grid">Features Within Interaction Grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interaction-caching">Interaction Caching</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="insights.html">Insights</a></li>
 <li class="toctree-l2"><a class="reference internal" href="activity.html">Activity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="deployChanges.html">Deploy Changes</a></li>
@@ -158,12 +162,59 @@
 your community members will be requesting. You will have the ability to type the response to the interaction and connect any open source data to communicate.</p>
 <p>Every skill starts with two interactions: Help and Welcome. Specify the skill help and welcome messages.</p>
 <img alt="_images/FAQGrid.png" src="_images/FAQGrid.png" />
-<p><strong>Interaction Caching</strong></p>
+<div class="section" id="features-within-interaction-grid">
+<h2>Features Within Interaction Grid<a class="headerlink" href="#features-within-interaction-grid" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>Filter Interactions</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Interaction Status</dt>
+<dd><ul class="first last simple">
+<li><dl class="first docutils">
+<dt>Click on buttons to the top left</dt>
+<dd><ul class="first last">
+<li>All | Pending | Approved</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Intents Filter</dt>
+<dd><ul class="first last simple">
+<li>Click and down arrow-key to intent and hit <cite>enter</cite></li>
+<li>Type name of intent and hit <cite>enter</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Search Bar</dt>
+<dd><ul class="first simple">
+<li>Type text to search response for a particular value</li>
+</ul>
+<img alt="_images/interaction_grid.png" class="last" src="_images/interaction_grid.png" />
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="interaction-caching">
+<h2>Interaction Caching<a class="headerlink" href="#interaction-caching" title="Permalink to this headline">¶</a></h2>
 <p>What is question caching?  Question caching is the process of saving the response to a question.  This saved response is then used the next time that same question is asked.  By saving certain responses we improve performance (response time) and resource consumption (reduced database access and server load).  Response times are improved because we already have the answer before the question is asked.  Resource consumption is reduced because we do not need to query the database for our response and the server is freed up to handle other requests improving response times.  Responses that are saved have a time to live (ttl).  The time to live (ttl) is used to determine how long a saved response should be used.  The saved response is deleted after the time to live (ttl) expires.  When any questions are editing in the manager and saved any cached results related to that question is also cleared out in order to show the latest information.  This is also true for when New Feeds or Event Calendars are updated.</p>
 <p>When to use caching?  Question caching should be used when the answer to a question is independent of the user asking the question.  If two people asked the same question would they get the same response? If the answer is yes then that question can probably be cached.  An example of a cache-able question is ‘Tell me today’s news’. If five people asked this question they would all get the same response.  But if the question was changed to ‘Tell me news near me’ then this response would not be cached because it is specific to the user.</p>
 <p>How long should a response be cached (time to live or ttl)? The time to live is determined by how long that response is valid.  When in doubt make the time to live shorter rather then longer.  Better to send a fresh response to the user rather than one that’s out of date and stale.  If the question uses a Connection and you know the data is updated every hour then you probably want to set it between 5 min to 1 hour depending on how frequent you want it to use the latest data. If you know your data updates every day then you typically set your ttl higher.</p>
 <p>In an effort to track and improve caching we track when a cached response or a fresh response is sent to the the user and is shown in the logs.</p>
 <p>You can see Interaction Guides here:    <a class="reference internal" href="interactionGuides.html#interaction-guides"><span class="std std-ref">Interaction Guides</span></a></p>
+</div>
 </div>
 
 

@@ -6,4 +6,18 @@ place by them. The Events section allows you to manually enter events with detai
 
 .. image:: ./images/Events.png
 
+
+===========================
+Features Within Events Page
+===========================
+
+* "+" Button 
+    * Expands view of each event 
+* Play Button   
+    * Allows a sample of story to be heard
+* Filter Evnets By Status
+    * Clcik on buttons on the bottom right of page
+        * All | Pending | Approved 
+        * View of page will shift to display selected type
+
 You can see Events Guides here: :ref:`Events Guides`

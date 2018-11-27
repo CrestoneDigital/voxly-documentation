@@ -34,16 +34,3 @@ Delete Event
 * Click on desired event to open side panel 
 * Click Delete button at the bottom of panel
     *One click deletes event*
-
-===========================
-Features Within Events Page
-===========================
-
-* "+" Button 
-    * Expands view of each event 
-* Play Button   
-    * Allows a sample of story to be heard
-* Filter Evnets By Status
-    * Clcik on buttons on the bottom right of page
-        * All | Pending | Approved 
-        * View of page will shift to display selected type

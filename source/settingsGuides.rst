@@ -1,9 +1,11 @@
 Settings Guides
 ===============
 
---------------
-Slots Settings
---------------
+============
+Create Slots
+============
+
+.. image:: ./images/slot_grid.png
 
 ---------
 Add Value
@@ -37,4 +39,15 @@ Update Alexa
 ------------
 
 * Once there is at least once value in each slot category you can update Alexa.
-* This update allows the skill to be built and testing to commence. 
+* This update allows the skill to be built and testing to commence.
+
+-------------
+Settings Slot
+-------------
+
+
+==============
+Create Intents
+==============
+
+.. image:: ./images/intent_grid.png

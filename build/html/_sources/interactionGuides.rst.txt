@@ -11,24 +11,32 @@ Create Interaction and Answer
 #. Fill out interaction template
     * Located at top
     * Select office the interaction is addressing
-    * Slot Types that are predefined will be look like *{Date}*
+    * Slot Types that are predefined will be look like **{Date}**
     * Select Slot Values from the drop-down   
         
-        *Multiple verbs can be chosen, if fitting to question being established*
-    * Click box to make the answer to the FAQ available to your Alexa skill. 
-    * If box is left unchecked the created response will be saved and can be edited.
+        *Multiple slot values can be chosen to narrow the interaction to a subset of values*
     
-    *Interaction will not be acknowledge by your skill until approved*
-    
+    * Interaction will not be acknowledged by your skill until approved, check the box
     * You can specify if the interaction should be cached and for how long
 
     *Slots filled within the template give Alexa context to search for information*
 
+Data Fields
+-----------
+You will be found throughout the different components
+
+* List - Collection or list of Items; ex. News or Events have multiple items to iterate through
+    * Path - Specifies how to interpret the text; considered input. Ex.) connectors.data is the list
+    * Function - Interpret input as a function to be called, some functions may take arguments. **See Data**
+    * String - Interpret input as String
+    * Number - Interpret input as a Number
+
+
 #. Fill out Flow - Interaction Flows
     #. Components - Located in left menu under **Components**
-        To fill out components in the flow, mouse over. The left button, pencil icon, if to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click again on the next component. To remove a connecting line,  right-click the starting anchor and press delete.
+        To fill out components in the flow, mouse over. The left button, pencil icon, is to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click again on the next component. To remove a connecting line,  right-click the starting anchor and press delete.
 
-        .. image:: ./images/delete_component.png
+        .. image:: ./images/delete_create_component_connector.gif
 
         * Response
             * Voice Message - Spoken message for a response
@@ -38,40 +46,20 @@ Create Interaction and Answer
                 * Small Image - recommended size: 720 width x 480 height
                 * Large Image - recommended size: 1200 width x 800 height
             * Accessibility Text - Description of the image (For Screen Readers)
-            * Display Templates - Defaults to a Card Template
+            * Display Templates - Defaults to a basic card template
 
             If display card template is selected, it will enable/disable certain fields.
                 * Background Image URL - The image that will be used as the background. The right button will open the link in a new tab to display image
-                * Accessibility Text - The description of the image (For Screen Readers)
+                * Accessibility Text
 
             * Directives - Playing video, audio, or third party services such as spotify
-                * URL - the link
-                * Title - header to be shown on devices with a screen
-                * Subtitle - 
-            
-        * Link Account - Third Party Account Linking
-            * Voice Message - Prompt message for third party account Linking
-
-        * Loop
-            * List - Collection or list of Items; ex. News or Events have multiple items to iterate through
-                * Path - Specifies how to interpret the text; considered input. Ex.) connectors.data is the list
-                * Function - Interpret input as a function to be called, some functions may take arguments. **See Data**
-                * String - Interpret input as String
-                * Number - Interpret input as a Number
-
-            * Prompt for Next - Response for next item if there is more items. Ex.) "Would you like to hear the next item?"
-            * Card Title
-            * Voice Message
-            * Display Message
-            * Image URL
-            * Directives
-                * Play Spotify
+                    * Play Spotify
                     * Playlist - URL
                 
                 * Play Video
                     * URL
                     * Title
-                    * Subtitle
+                    * Subtitle - Support system subtitle
                 
                 * Play Audio
                     * URL
@@ -82,6 +70,19 @@ Create Interaction and Answer
                     * Pause Response - Response for when directive is paused
                     * Resume Response - Response for when directive is resumed
                     * TTL After Pause - Time to Live; how long before the directive is cleared and can't be resumed
+            
+        * Link Account - Third Party Account Linking
+            * Voice Message - Prompt message for third party account linking
+
+        * Loop
+            * Arguments
+
+            * Prompt for Next - Response for next item if there is more items. Ex.) "Would you like to hear the next item?"
+            * Card Title
+            * Voice Message
+            * Display Message
+            * Image URL
+            * Directives
                 
         * Yes/No
             * Yes
@@ -138,7 +139,6 @@ Create Interaction and Answer
 
     .. image:: ./images/variable_interaction.png
 
-
 ================
 Edit Interaction
 ================
@@ -154,21 +154,36 @@ Delete Interaction
 * Click delete button in the bottom left corner
     * A toast will appear to verify you truly would like to delete Interaction
 
-================================
-Features Within Interaction Grid
-================================
 
-* Filter Interactions
-    * Interaction Status
-        * Click on buttons to the top left
-            * All | Pending | Approved
+=====================
+Handlebars Templating
+=====================
 
-    * Intents Filter
-        * Click and down arrow-key to intent and hit `enter`
-        * Type name of intent and hit `enter`
+Handlebars helps users create custom handlesbars helpers. These helpers evaluate values within the braces and interchanges the corresponding value. 
 
-    * Search Bar
-        * Type text to search response for a particular value
+Handlebars::
+    
+    {{inputs.TruckNumber.value}} :: returns the inputs TruckNumber value from the Data
+    {{connectors.c1.0.value}} :: returns the c1 connectors zeroth position item with the key 'value'
 
-        .. image:: ./images/interaction_grid.png
+`Handlebars Partials & Helpers <https://blog.teamtreehouse.com/handlebars-js-part-2-partials-and-helpers>`_
 
+`Handlebars Reference <http://handlebarsjs.com/reference.html>`_
+
+`Handlebars Beginners Guide <https://www.sitepoint.com/a-beginners-guide-to-handlebars/>`_
+
+
+=============
+Helpful Hints
+=============
+To move entire flow, **LEFT-CLICK** and drag. Move individual components by pressing and dragging on each individual component.
+
+.. image:: ./images/full_shift.gif
+
+To move the flow from a particular component and up, press **SHIFT** and drag.
+
+.. image:: ./images/upper_shift.gif
+
+To move the flow from a particular component and down, press **CONTROL** and drag.
+
+.. image:: ./images/lower_shift.gif

@@ -9,7 +9,27 @@ Every skill starts with two interactions: Help and Welcome. Specify the skill he
 
 .. image:: ./images/FAQGrid.png
 
-**Interaction Caching**  
+================================
+Features Within Interaction Grid
+================================
+
+* Filter Interactions
+    * Interaction Status
+        * Click on buttons to the top left
+            * All | Pending | Approved
+
+    * Intents Filter
+        * Click and down arrow-key to intent and hit `enter`
+        * Type name of intent and hit `enter`
+
+    * Search Bar
+        * Type text to search response for a particular value
+
+        .. image:: ./images/interaction_grid.png
+
+===================
+Interaction Caching
+===================
 
 What is question caching?  Question caching is the process of saving the response to a question.  This saved response is then used the next time that same question is asked.  By saving certain responses we improve performance (response time) and resource consumption (reduced database access and server load).  Response times are improved because we already have the answer before the question is asked.  Resource consumption is reduced because we do not need to query the database for our response and the server is freed up to handle other requests improving response times.  Responses that are saved have a time to live (ttl).  The time to live (ttl) is used to determine how long a saved response should be used.  The saved response is deleted after the time to live (ttl) expires.  When any questions are editing in the manager and saved any cached results related to that question is also cleared out in order to show the latest information.  This is also true for when New Feeds or Event Calendars are updated.
 

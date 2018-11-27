@@ -92,10 +92,14 @@
 <li class="toctree-l2"><a class="reference internal" href="newsGuides.html">News Guides</a></li>
 <li class="toctree-l2"><a class="reference internal" href="eventsGuides.html">Events Guides</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Interaction Guides</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-interaction-and-answer">Create Interaction and Answer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-interaction-and-answer">Create Interaction and Answer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#data-fields">Data Fields</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#edit-interaction">Edit Interaction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#delete-interaction">Delete Interaction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#features-within-interaction-grid">Features Within Interaction Grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#handlebars-templating">Handlebars Templating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#helpful-hints">Helpful Hints</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="insightsGuides.html">Insights Guides</a></li>
@@ -177,33 +181,47 @@
 </li>
 <li><p class="first">Select office the interaction is addressing</p>
 </li>
-<li><p class="first">Slot Types that are predefined will be look like <em>{Date}</em></p>
+<li><p class="first">Slot Types that are predefined will be look like <strong>{Date}</strong></p>
 </li>
 <li><p class="first">Select Slot Values from the drop-down</p>
 <blockquote>
-<div><p><em>Multiple verbs can be chosen, if fitting to question being established</em></p>
+<div><p><em>Multiple slot values can be chosen to narrow the interaction to a subset of values</em></p>
 </div></blockquote>
 </li>
-<li><p class="first">Click box to make the answer to the FAQ available to your Alexa skill.</p>
+<li><p class="first">Interaction will not be acknowledged by your skill until approved, check the box</p>
 </li>
-<li><p class="first">If box is left unchecked the created response will be saved and can be edited.</p>
+<li><p class="first">You can specify if the interaction should be cached and for how long</p>
 </li>
-</ul>
-<p><em>Interaction will not be acknowledge by your skill until approved</em></p>
-<ul class="simple">
-<li>You can specify if the interaction should be cached and for how long</li>
 </ul>
 <p class="last"><em>Slots filled within the template give Alexa context to search for information</em></p>
 </dd>
 </dl>
 </li>
+</ol>
+<div class="section" id="data-fields">
+<h3>Data Fields<a class="headerlink" href="#data-fields" title="Permalink to this headline">¶</a></h3>
+<p>You will be found throughout the different components</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>List - Collection or list of Items; ex. News or Events have multiple items to iterate through</dt>
+<dd><ul class="first last">
+<li>Path - Specifies how to interpret the text; considered input. Ex.) connectors.data is the list</li>
+<li>Function - Interpret input as a function to be called, some functions may take arguments. <strong>See Data</strong></li>
+<li>String - Interpret input as String</li>
+<li>Number - Interpret input as a Number</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<ol class="arabic">
 <li><dl class="first docutils">
 <dt>Fill out Flow - Interaction Flows</dt>
 <dd><ol class="first last arabic">
 <li><dl class="first docutils">
 <dt>Components - Located in left menu under <strong>Components</strong></dt>
-<dd><p class="first">To fill out components in the flow, mouse over. The left button, pencil icon, if to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click again on the next component. To remove a connecting line,  right-click the starting anchor and press delete.</p>
-<img alt="_images/delete_component.png" src="_images/delete_component.png" />
+<dd><p class="first">To fill out components in the flow, mouse over. The left button, pencil icon, is to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click again on the next component. To remove a connecting line,  right-click the starting anchor and press delete.</p>
+<img alt="_images/delete_create_component_connector.gif" src="_images/delete_create_component_connector.gif" />
 <ul class="last">
 <li><dl class="first docutils">
 <dt>Response</dt>
@@ -221,75 +239,32 @@
 </dl>
 </li>
 <li>Accessibility Text - Description of the image (For Screen Readers)</li>
-<li>Display Templates - Defaults to a Card Template</li>
+<li>Display Templates - Defaults to a basic card template</li>
 </ul>
 <dl class="docutils">
 <dt>If display card template is selected, it will enable/disable certain fields.</dt>
 <dd><ul class="first last simple">
 <li>Background Image URL - The image that will be used as the background. The right button will open the link in a new tab to display image</li>
-<li>Accessibility Text - The description of the image (For Screen Readers)</li>
+<li>Accessibility Text</li>
 </ul>
 </dd>
 </dl>
-<ul class="last simple">
+<ul class="last">
 <li><dl class="first docutils">
 <dt>Directives - Playing video, audio, or third party services such as spotify</dt>
-<dd><ul class="first last">
-<li>URL - the link</li>
-<li>Title - header to be shown on devices with a screen</li>
-<li>Subtitle -</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Link Account - Third Party Account Linking</dt>
-<dd><ul class="first last simple">
-<li>Voice Message - Prompt message for third party account Linking</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Loop</dt>
-<dd><ul class="first last simple">
-<li><dl class="first docutils">
-<dt>List - Collection or list of Items; ex. News or Events have multiple items to iterate through</dt>
-<dd><ul class="first last">
-<li>Path - Specifies how to interpret the text; considered input. Ex.) connectors.data is the list</li>
-<li>Function - Interpret input as a function to be called, some functions may take arguments. <strong>See Data</strong></li>
-<li>String - Interpret input as String</li>
-<li>Number - Interpret input as a Number</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li>Prompt for Next - Response for next item if there is more items. Ex.) &#8220;Would you like to hear the next item?&#8221;</li>
-<li>Card Title</li>
-<li>Voice Message</li>
-<li>Display Message</li>
-<li>Image URL</li>
-<li><dl class="first docutils">
-<dt>Directives</dt>
-<dd><ul class="first last">
-<li><dl class="first docutils">
-<dt>Play Spotify</dt>
-<dd><ul class="first last">
+<dd><blockquote class="first">
+<div><ul class="simple">
+<li>Play Spotify</li>
 <li>Playlist - URL</li>
 </ul>
-</dd>
-</dl>
-</li>
+</div></blockquote>
+<ul class="last simple">
 <li><dl class="first docutils">
 <dt>Play Video</dt>
 <dd><ul class="first last">
 <li>URL</li>
 <li>Title</li>
-<li>Subtitle</li>
+<li>Subtitle - Support system subtitle</li>
 </ul>
 </dd>
 </dl>
@@ -313,6 +288,28 @@
 </dd>
 </dl>
 </li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Link Account - Third Party Account Linking</dt>
+<dd><ul class="first last simple">
+<li>Voice Message - Prompt message for third party account linking</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Loop</dt>
+<dd><ul class="first last simple">
+<li>Arguments</li>
+<li>Prompt for Next - Response for next item if there is more items. Ex.) &#8220;Would you like to hear the next item?&#8221;</li>
+<li>Card Title</li>
+<li>Voice Message</li>
+<li>Display Message</li>
+<li>Image URL</li>
+<li>Directives</li>
 </ul>
 </dd>
 </dl>
@@ -451,6 +448,7 @@
 </li>
 </ol>
 </div>
+</div>
 <div class="section" id="edit-interaction">
 <h2>Edit Interaction<a class="headerlink" href="#edit-interaction" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -472,50 +470,26 @@
 </li>
 </ul>
 </div>
-<div class="section" id="features-within-interaction-grid">
-<h2>Features Within Interaction Grid<a class="headerlink" href="#features-within-interaction-grid" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><dl class="first docutils">
-<dt>Filter Interactions</dt>
-<dd><ul class="first last">
-<li><dl class="first docutils">
-<dt>Interaction Status</dt>
-<dd><ul class="first last simple">
-<li><dl class="first docutils">
-<dt>Click on buttons to the top left</dt>
-<dd><ul class="first last">
-<li>All | Pending | Approved</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Intents Filter</dt>
-<dd><ul class="first last simple">
-<li>Click and down arrow-key to intent and hit <cite>enter</cite></li>
-<li>Type name of intent and hit <cite>enter</cite></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>Search Bar</dt>
-<dd><ul class="first simple">
-<li>Type text to search response for a particular value</li>
-</ul>
-<img alt="_images/interaction_grid.png" class="last" src="_images/interaction_grid.png" />
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
+<div class="section" id="handlebars-templating">
+<h2>Handlebars Templating<a class="headerlink" href="#handlebars-templating" title="Permalink to this headline">¶</a></h2>
+<p>Handlebars helps users create custom handlesbars helpers. These helpers evaluate values within the braces and interchanges the corresponding value.</p>
+<p>Handlebars:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{{</span><span class="n">inputs</span><span class="o">.</span><span class="n">TruckNumber</span><span class="o">.</span><span class="n">value</span><span class="p">}}</span> <span class="p">::</span> <span class="n">returns</span> <span class="n">the</span> <span class="n">inputs</span> <span class="n">TruckNumber</span> <span class="n">value</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Data</span>
+<span class="p">{{</span><span class="n">connectors</span><span class="o">.</span><span class="n">c1</span><span class="o">.</span><span class="mf">0.</span><span class="n">value</span><span class="p">}}</span> <span class="p">::</span> <span class="n">returns</span> <span class="n">the</span> <span class="n">c1</span> <span class="n">connectors</span> <span class="n">zeroth</span> <span class="n">position</span> <span class="n">item</span> <span class="k">with</span> <span class="n">the</span> <span class="n">key</span> <span class="s1">&#39;value&#39;</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://blog.teamtreehouse.com/handlebars-js-part-2-partials-and-helpers">Handlebars Partials &amp; Helpers</a></p>
+<p><a class="reference external" href="http://handlebarsjs.com/reference.html">Handlebars Reference</a></p>
+<p><a class="reference external" href="https://www.sitepoint.com/a-beginners-guide-to-handlebars/">Handlebars Beginners Guide</a></p>
+</div>
+<div class="section" id="helpful-hints">
+<h2>Helpful Hints<a class="headerlink" href="#helpful-hints" title="Permalink to this headline">¶</a></h2>
+<p>To move entire flow, <strong>LEFT-CLICK</strong> and drag. Move individual components by pressing and dragging on each individual component.</p>
+<img alt="_images/full_shift.gif" src="_images/full_shift.gif" />
+<p>To move the flow from a particular component and up, press <strong>SHIFT</strong> and drag.</p>
+<img alt="_images/upper_shift.gif" src="_images/upper_shift.gif" />
+<p>To move the flow from a particular component and down, press <strong>CONTROL</strong> and drag.</p>
+<img alt="_images/lower_shift.gif" src="_images/lower_shift.gif" />
 </div>
 </div>
 
