@@ -93,8 +93,16 @@
 <li class="toctree-l2"><a class="reference internal" href="eventsExamples.html">Events Examples</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Interaction Examples</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#carto-connector">Carto Connector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#socrata-connector">Socrata Connector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#airtable">Airtable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#arcgis-online">ArcGIS Online</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ckan">CKAN</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#google-sheets-connector">Google Sheets Connector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lambda">Lambda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opendatasoft">OpenDataSoft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#postgres">PostGres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rest-api">REST API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#salesforce">Salesforce</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#socrata-connector">Socrata Connector</a></li>
 </ul>
 </li>
 </ul>
@@ -153,16 +161,68 @@
             
   <div class="section" id="interaction-examples">
 <h1>Interaction Examples<a class="headerlink" href="#interaction-examples" title="Permalink to this headline">¶</a></h1>
+<p>Name the connectors to be unique and specific to what they are used for. Multiple connectors may be created of the same type.</p>
 <div class="section" id="carto-connector">
 <h2>Carto Connector<a class="headerlink" href="#carto-connector" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/census_carto_1.png" src="_images/census_carto_1.png" />
 <img alt="_images/census_carto_response_2.png" src="_images/census_carto_response_2.png" />
 </div>
-<div class="section" id="socrata-connector">
-<h2>Socrata Connector<a class="headerlink" href="#socrata-connector" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="airtable">
+<h2>Airtable<a class="headerlink" href="#airtable" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/integration_airtable.gif" src="_images/integration_airtable.gif" />
+<p>The API Key is located in the Airtable User Account. Click on the User Image in the top right, and click on <strong>Account</strong>. API Key is located in the Overview section under API. For first time, click <strong>Generate API key</strong> or use the personal API key that&#8217;s been generated. The API Key and Airtable API link to get the Base ID is highlighted in the image below.</p>
+<img alt="_images/airtable_api_key.png" src="_images/airtable_api_key.png" />
+<p>To get the Base ID, press the <cite>Airtable API</cite> above where the API Key is in the User Account Settings. Once pressed, a new tab will open. The Airtable API for &#8220;TABLE NAME&#8221; will be displayed at the top. To change which table or data-set, press the down arrow. Scroll down on the right side, the Base ID is highlighted in the Example Using Bearer Token Example.</p>
+<img alt="_images/base_id_airtable.png" src="_images/base_id_airtable.png" />
+<p>Once the Airtable Connector has been created, navigate to interactions to begin creating new interactions using the new connector.</p>
+<img alt="_images/airtable_1.gif" src="_images/airtable_1.gif" />
+<ul class="simple">
+<li>Drag and Drop the Airtable connector into the flow diagram area</li>
+<li>Connect the Start component to Airtable, and Airtable to Response</li>
+<li>Table is the name of the table tab in the airtable table</li>
+<li><dl class="first docutils">
+<dt>Fields are the columns. To add fields, type the name of the column and hit the <strong>Comma Key</strong> on the keyboard. This will create a boxed item with the name and an &#8216;x&#8217; to be able to remove it from the list. Add as many fields as may be useful for this interaction response.</dt>
+<dd><ul class="first last">
+<li>Add <cite>Category</cite></li>
+<li>Add <cite>brand_description</cite></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>View should be the <cite>Grid view.</cite></li>
+<li>Filter on a particular value. Ex.) Category = &#8220;BRANDY&#8221; should return all records with category matching &#8220;BRANDY&#8221; and the records brand_description</li>
+</ul>
+</div>
+<div class="section" id="arcgis-online">
+<h2>ArcGIS Online<a class="headerlink" href="#arcgis-online" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="ckan">
+<h2>CKAN<a class="headerlink" href="#ckan" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="google-sheets-connector">
 <h2>Google Sheets Connector<a class="headerlink" href="#google-sheets-connector" title="Permalink to this headline">¶</a></h2>
+<p>The spreadsheet ID is highlighted in the Google Sheet URL. The value is followed by the spreadsheets/d/{spreadsheet ID}/</p>
+<img alt="_images/google_sheet_id.png" src="_images/google_sheet_id.png" />
+<p>The Google Sheet GID, which is used within the interaction is the right number highlighted in the image above. It can be found by copying the number after the <strong>#gid={gid}</strong>.</p>
+<p>The GID will change when changing table tabs which are located at the bottom left.</p>
+</div>
+<div class="section" id="lambda">
+<h2>Lambda<a class="headerlink" href="#lambda" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="opendatasoft">
+<h2>OpenDataSoft<a class="headerlink" href="#opendatasoft" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="postgres">
+<h2>PostGres<a class="headerlink" href="#postgres" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="rest-api">
+<h2>REST API<a class="headerlink" href="#rest-api" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="salesforce">
+<h2>Salesforce<a class="headerlink" href="#salesforce" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="socrata-connector">
+<h2>Socrata Connector<a class="headerlink" href="#socrata-connector" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

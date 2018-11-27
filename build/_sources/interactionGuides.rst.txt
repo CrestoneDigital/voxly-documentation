@@ -19,7 +19,7 @@ Create Interaction and Answer
     * Interaction will not be acknowledged by your skill until approved, check the box
     * You can specify if the interaction should be cached and for how long
 
-    *Slots filled within the template give Alexa context to search for information*
+    *Slots filled within the template give Alexa & Google context to search for information*
 
 Data Fields
 -----------
@@ -34,7 +34,7 @@ You will be found throughout the different components
 
 #. Fill out Flow - Interaction Flows
     #. Components - Located in left menu under **Components**
-        To fill out components in the flow, mouse over. The left button, pencil icon, is to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click again on the next component. To remove a connecting line,  right-click the starting anchor and press delete.
+        To fill out components in the flow, mouse over. The left button, pencil icon, is to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click the next connecting component anchor. To remove a connecting line,  **RIGHT-CLICK** the starting anchor and press **DELETE**.
 
         .. image:: ./images/delete_create_component_connector.gif
 
@@ -75,8 +75,7 @@ You will be found throughout the different components
             * Voice Message - Prompt message for third party account linking
 
         * Loop
-            * Arguments
-
+            * List - See above **Data Fields**
             * Prompt for Next - Response for next item if there is more items. Ex.) "Would you like to hear the next item?"
             * Card Title
             * Voice Message
@@ -132,9 +131,7 @@ You will be found throughout the different components
                 * mod - returns the modulus
                 * number - returns variable or value as number
 
-#. Save
-#. Save & Close
-#. Cancel
+#. Save | Save & Close | Cancel
 
 
     .. image:: ./images/variable_interaction.png
@@ -144,7 +141,7 @@ Edit Interaction
 ================
 
 * Double click desired Interaction
-* Once changes are made, Click `Save` or `Save and Close`
+* Once changes are made, Click **Save** or **Save and Close**
 
 ==================
 Delete Interaction
@@ -155,12 +152,66 @@ Delete Interaction
     * A toast will appear to verify you truly would like to delete Interaction
 
 
-=====================
-Handlebars Templating
-=====================
+==========================
+Handlebars Template Engine
+==========================
 
-Handlebars helps users create custom handlesbars helpers. These helpers evaluate values within the braces and interchanges the corresponding value. 
+Handlebars helps users create custom handlebars helpers. These helpers evaluate values within the braces and interchanges the corresponding value.
 
+In handlebars, objects are like menu items with sub-menus. The sub-menus may have more sub-menus. Those are called keys, keys always have values whether that's another object or sub-menu, or an item.
+
+Example::
+
+    ## inputs is the key, and AccountSecondaryCategory is the value.
+    ## AccountSecondaryCategory also is a key that has a value of `value`
+    ## keys have values that can be keys
+    Data
+        inputs
+            AccountSecondaryCategory
+                value
+            AccountCategory
+                value
+        connectors
+            c1
+                first
+                last
+                length
+        settings
+            account_number
+            city
+            zipcode
+
+    ## Programmatically and with values
+    Data: {
+        inputs: {
+            AccountSecondaryCategory: {
+                value: 'annual'
+            },
+            AccountCategory: {
+                value: 'property
+            }
+        },
+        connectors: {
+            c1: {
+                first: [2000, 200, 100, 25],
+                last: ['LastExample']
+                length: 3
+            }
+        },
+        settings: {
+            account_number: 001234,
+            city: 'Denver'
+        }
+    }
+
+To access the items through handlebars::
+
+    `The {{inputs.AccountSecondaryCategory.value}} {{inputs.AccountCategory.value}} value is ${{connectors.c1.first.0}}.` will be evaluated as:
+
+    'The annual property value is $2000.'
+
+    `{{settings.account_number}}` is evaluated as `001234`
+ 
 Handlebars::
     
     {{inputs.TruckNumber.value}} :: returns the inputs TruckNumber value from the Data
@@ -172,6 +223,9 @@ Handlebars::
 
 `Handlebars Beginners Guide <https://www.sitepoint.com/a-beginners-guide-to-handlebars/>`_
 
+=====
+Tests
+=====
 
 =============
 Helpful Hints

@@ -98,7 +98,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#edit-interaction">Edit Interaction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#delete-interaction">Delete Interaction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#handlebars-templating">Handlebars Templating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#handlebars-template-engine">Handlebars Template Engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests">Tests</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#helpful-hints">Helpful Hints</a></li>
 </ul>
 </li>
@@ -193,7 +194,7 @@
 <li><p class="first">You can specify if the interaction should be cached and for how long</p>
 </li>
 </ul>
-<p class="last"><em>Slots filled within the template give Alexa context to search for information</em></p>
+<p class="last"><em>Slots filled within the template give Alexa &amp; Google context to search for information</em></p>
 </dd>
 </dl>
 </li>
@@ -220,7 +221,7 @@
 <dd><ol class="first last arabic">
 <li><dl class="first docutils">
 <dt>Components - Located in left menu under <strong>Components</strong></dt>
-<dd><p class="first">To fill out components in the flow, mouse over. The left button, pencil icon, is to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click again on the next component. To remove a connecting line,  right-click the starting anchor and press delete.</p>
+<dd><p class="first">To fill out components in the flow, mouse over. The left button, pencil icon, is to edit; the right button, x icon, is to delete the component. To connect components click the initial component anchor and click the next connecting component anchor. To remove a connecting line,  <strong>RIGHT-CLICK</strong> the starting anchor and press <strong>DELETE</strong>.</p>
 <img alt="_images/delete_create_component_connector.gif" src="_images/delete_create_component_connector.gif" />
 <ul class="last">
 <li><dl class="first docutils">
@@ -303,7 +304,7 @@
 <li><dl class="first docutils">
 <dt>Loop</dt>
 <dd><ul class="first last simple">
-<li>Arguments</li>
+<li>List - See above <strong>Data Fields</strong></li>
 <li>Prompt for Next - Response for next item if there is more items. Ex.) &#8220;Would you like to hear the next item?&#8221;</li>
 <li>Card Title</li>
 <li>Voice Message</li>
@@ -437,11 +438,7 @@
 </dd>
 </dl>
 </li>
-<li><p class="first">Save</p>
-</li>
-<li><p class="first">Save &amp; Close</p>
-</li>
-<li><p class="first">Cancel</p>
+<li><p class="first">Save | Save &amp; Close | Cancel</p>
 <blockquote>
 <div><img alt="_images/variable_interaction.png" src="_images/variable_interaction.png" />
 </div></blockquote>
@@ -453,7 +450,7 @@
 <h2>Edit Interaction<a class="headerlink" href="#edit-interaction" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Double click desired Interaction</li>
-<li>Once changes are made, Click <cite>Save</cite> or <cite>Save and Close</cite></li>
+<li>Once changes are made, Click <strong>Save</strong> or <strong>Save and Close</strong></li>
 </ul>
 </div>
 <div class="section" id="delete-interaction">
@@ -470,9 +467,62 @@
 </li>
 </ul>
 </div>
-<div class="section" id="handlebars-templating">
-<h2>Handlebars Templating<a class="headerlink" href="#handlebars-templating" title="Permalink to this headline">¶</a></h2>
-<p>Handlebars helps users create custom handlesbars helpers. These helpers evaluate values within the braces and interchanges the corresponding value.</p>
+<div class="section" id="handlebars-template-engine">
+<h2>Handlebars Template Engine<a class="headerlink" href="#handlebars-template-engine" title="Permalink to this headline">¶</a></h2>
+<p>Handlebars helps users create custom handlebars helpers. These helpers evaluate values within the braces and interchanges the corresponding value.</p>
+<p>In handlebars, objects are like menu items with sub-menus. The sub-menus may have more sub-menus. Those are called keys, keys always have values whether that&#8217;s another object or sub-menu, or an item.</p>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">## inputs is the key, and AccountSecondaryCategory is the value.</span>
+<span class="c1">## AccountSecondaryCategory also is a key that has a value of `value`</span>
+<span class="c1">## keys have values that can be keys</span>
+<span class="n">Data</span>
+    <span class="n">inputs</span>
+        <span class="n">AccountSecondaryCategory</span>
+            <span class="n">value</span>
+        <span class="n">AccountCategory</span>
+            <span class="n">value</span>
+    <span class="n">connectors</span>
+        <span class="n">c1</span>
+            <span class="n">first</span>
+            <span class="n">last</span>
+            <span class="n">length</span>
+    <span class="n">settings</span>
+        <span class="n">account_number</span>
+        <span class="n">city</span>
+        <span class="n">zipcode</span>
+
+<span class="c1">## Programmatically and with values</span>
+<span class="n">Data</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">inputs</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">AccountSecondaryCategory</span><span class="p">:</span> <span class="p">{</span>
+            <span class="n">value</span><span class="p">:</span> <span class="s1">&#39;annual&#39;</span>
+        <span class="p">},</span>
+        <span class="n">AccountCategory</span><span class="p">:</span> <span class="p">{</span>
+            <span class="n">value</span><span class="p">:</span> <span class="s1">&#39;property</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">connectors</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">c1</span><span class="p">:</span> <span class="p">{</span>
+            <span class="n">first</span><span class="p">:</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
+            <span class="n">last</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;LastExample&#39;</span><span class="p">]</span>
+            <span class="n">length</span><span class="p">:</span> <span class="mi">3</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">settings</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">account_number</span><span class="p">:</span> <span class="mi">001234</span><span class="p">,</span>
+        <span class="n">city</span><span class="p">:</span> <span class="s1">&#39;Denver&#39;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>To access the items through handlebars:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>`The {{inputs.AccountSecondaryCategory.value}} {{inputs.AccountCategory.value}} value is ${{connectors.c1.first.0}}.` will be evaluated as:
+
+&#39;The annual property value is $2000.&#39;
+
+`{{settings.account_number}}` is evaluated as `001234`
+</pre></div>
+</div>
 <p>Handlebars:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{{</span><span class="n">inputs</span><span class="o">.</span><span class="n">TruckNumber</span><span class="o">.</span><span class="n">value</span><span class="p">}}</span> <span class="p">::</span> <span class="n">returns</span> <span class="n">the</span> <span class="n">inputs</span> <span class="n">TruckNumber</span> <span class="n">value</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Data</span>
 <span class="p">{{</span><span class="n">connectors</span><span class="o">.</span><span class="n">c1</span><span class="o">.</span><span class="mf">0.</span><span class="n">value</span><span class="p">}}</span> <span class="p">::</span> <span class="n">returns</span> <span class="n">the</span> <span class="n">c1</span> <span class="n">connectors</span> <span class="n">zeroth</span> <span class="n">position</span> <span class="n">item</span> <span class="k">with</span> <span class="n">the</span> <span class="n">key</span> <span class="s1">&#39;value&#39;</span>
@@ -481,6 +531,9 @@
 <p><a class="reference external" href="https://blog.teamtreehouse.com/handlebars-js-part-2-partials-and-helpers">Handlebars Partials &amp; Helpers</a></p>
 <p><a class="reference external" href="http://handlebarsjs.com/reference.html">Handlebars Reference</a></p>
 <p><a class="reference external" href="https://www.sitepoint.com/a-beginners-guide-to-handlebars/">Handlebars Beginners Guide</a></p>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="helpful-hints">
 <h2>Helpful Hints<a class="headerlink" href="#helpful-hints" title="Permalink to this headline">¶</a></h2>
