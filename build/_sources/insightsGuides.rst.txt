@@ -13,8 +13,8 @@ Search in Insights
 
      *Values found within drop down lists would have been created within the Slots page under Settings. If a value is not found admin with access may add a new value in the Slots page within Settings.*
 
-==============
-Sort Questions
-==============
+=================
+Sort Interactions
+=================
 
-After displaying all the recorded questions you can sort the questions by "All", "Success", "Notice", "Warning" or "Error" from the option in the bottom left side of the page.
+After displaying all the recorded interactions, they can be sorted by "All", "Success", "Notice", "Warning" or "Error" from the option in the bottom left side of the page.

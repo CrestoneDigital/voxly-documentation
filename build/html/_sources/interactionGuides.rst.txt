@@ -16,14 +16,14 @@ Create Interaction and Answer
         
         *Multiple slot values can be chosen to narrow the interaction to a subset of values*
     
-    * Interaction will not be acknowledged by your skill until approved, check the box
-    * You can specify if the interaction should be cached and for how long
+    * Interaction will not be acknowledged by the skill until approved, check the box
+    * Ability to specify if the interaction should be cached and for how long
 
     *Slots filled within the template give Alexa & Google context to search for information*
 
 Data Fields
 -----------
-You will be found throughout the different components
+This data field will be found throughout the different components
 
 * List - Collection or list of Items; ex. News or Events have multiple items to iterate through
     * Path - Specifies how to interpret the text; considered input. Ex.) connectors.data is the list
@@ -149,7 +149,7 @@ Delete Interaction
 
 * Double click desired Interaction
 * Click delete button in the bottom left corner
-    * A toast will appear to verify you truly would like to delete Interaction
+    * A toast will appear to verify the manager would like to delete Interaction
 
 
 ==========================

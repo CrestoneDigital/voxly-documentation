@@ -18,4 +18,4 @@ Functions Within News Page
 * Play Button   
     * Allows a sample of story to be heard
 
-You can see News Guides here: :ref:`News Guides`
+See News Guides here: :ref:`News Guides`

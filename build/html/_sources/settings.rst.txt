@@ -1,8 +1,6 @@
 Settings
 ========
-
 Include paragraph about settings
-
 
 ===========
 General Tab
@@ -19,16 +17,16 @@ General Tab
 Invocation Name
 ---------------
 
-* The invocation name is how your skill will be invoked by users. Also known as wake word. It is recommended to make the invocation name two words.
+* The invocation name is how the skill will be invoked by users. Also known as wake word. It is recommended to make the invocation name two words.
 
 -------------------------
 Alexa Skill and Google ID
 -------------------------
 
-* This ID is unique for each tenants' skill. This is how the server will register your specific skill.
-* You will enter the skill ID associated with the Amazon Alexa skill you have created.
+* This ID is unique for each tenants' skill. This is how the server will register a specific skill.
+*  Enter the skill ID associated with the Amazon Alexa skill that was created.
 
-*For instructions on setting up your Alexa skill account please see blank section*
+*For instructions on setting up the Alexa skill account please see blank section*
 
 ----------------
 Reprompt Message
@@ -40,13 +38,9 @@ Reprompt Message
 Speak Text Button
 -----------------
 
-* This button allows you test what your message will sound like. 
-
+* This button allows a manager to test what the voice message will sound like. 
 
 *Note:Voice is what Alexa will speak. Display is what she will show, if using a screen. Please refer to writing section to better understand how to write messages that will be spoken.*
-
-
-
 
 =========
 News Feed
@@ -64,8 +58,8 @@ News Feed URL
 Refresh
 -------
 
-* You can pick if you would like news updates to refresh on a daily or hourly bases. 
-* It is recommended you base the choice off frequency of new content being made available to your community. 
+* Ability to refresh news has options for daily or hourly. 
+* It is recommended the frequently refresh new content being made available to the community. 
 
 -------------
 Empty Message
@@ -83,7 +77,7 @@ Days to Reference
 Remove Text
 -----------
 
-* If RSS cuts off a story, this text boxes allows you to construct a message to further direct users.
+* If RSS cuts off a story, this text box allows for a custom message to direct users further.
 
 ----------------
 Sync Data Button
@@ -97,15 +91,12 @@ Clear All Data
 
 * Clears all data. 
 
-
-
-
 =====
 Slots
 =====
 
-The primary function of this page is to create values to further be used within your management system. The drop down contains a list of predetermined slot categories,
-values to be added will correspond to these categories. This section can best be thought of as a word bank, you are adding words (values) that relate to each category. 
+The primary function of this page is to create values to further be used within the management system. The drop down contains a list of predetermined slot categories,
+values to be added will correspond to these categories. This section can best be thought of as a word bank, adding words (values) that relate to each category. 
 Please see below for further examples. 
 
 .. image:: ./images/slots_grid.png
@@ -116,13 +107,13 @@ Please see below for further examples.
 
 *Values created within this page will give content to choose from slot categories when creating/editing FAQs and Events*
 
-You can see Slots Settings Guides here: :ref:`Settings Guides`
+See Slots Settings Guides here: :ref:`Settings Guides`
 
 ===========
 Integration
 ===========
 
-* If you have your own open source connectors they can be input here. 
+* If their are open source connectors, they can be added under Integration. 
     #. Click add
     #. Select account type
     #. Input information for data to be queried 

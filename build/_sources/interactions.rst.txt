@@ -1,7 +1,7 @@
 Interactions
 ============
 
-This section was designed to best assist how to create and edit interactions. Using slot values created within the Slots section in Settings, the ability to identify the information community members will be requesting will be made easy to create responses for. You will have the ability to type the response to the interaction and connect any open source data to communicate. 
+This section was designed to best assist how to create and edit interactions. Using slot values created within the Slots section in Settings, the ability to identify the information community members will be requesting will be made easy to create responses for. Voxly will give the ability to type the response to the interaction and connect any open source data to communicate. 
 
 
 Every skill starts with two interactions: Help and Welcome. Specify the skill help and welcome messages.

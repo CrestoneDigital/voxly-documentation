@@ -1,8 +1,6 @@
 Settings
 ========
-
 Include paragraph about settings
-
 
 ===========
 General Tab
@@ -42,11 +40,7 @@ Speak Text Button
 
 * This button allows a manager to test what the voice message will sound like. 
 
-
 *Note:Voice is what Alexa will speak. Display is what she will show, if using a screen. Please refer to writing section to better understand how to write messages that will be spoken.*
-
-
-
 
 =========
 News Feed
@@ -96,9 +90,6 @@ Clear All Data
 --------------
 
 * Clears all data. 
-
-
-
 
 =====
 Slots

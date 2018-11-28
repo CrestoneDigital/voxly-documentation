@@ -98,7 +98,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#add-value">Add Value</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#delete-value">Delete Value</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#delete-synonym">Delete Synonym</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#update-alexa">Update Alexa</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#settings-slot">Settings Slot</a></li>
 </ul>
 </li>
@@ -167,52 +166,71 @@
 <div class="section" id="create-slots">
 <h2>Create Slots<a class="headerlink" href="#create-slots" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/slot_grid.png" src="_images/slot_grid.png" />
+<ul class="simple">
+<li>Click the <strong>+ New Slot</strong> button in the bottom right corner.</li>
+<li>Name the Slot. It is recommended that the name be upper cased, and if it&#8217;s multiple words to be separated by an underscore, &#8220;_&#8221;.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">AISLE_CATEGORY</span>
+</pre></div>
+</div>
 <div class="section" id="add-value">
 <h3>Add Value<a class="headerlink" href="#add-value" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><ol class="arabic simple">
-<li><dl class="first docutils">
-<dt>Select the Slot you would like to enter value within.</dt>
-<dd><ul class="first last">
-<li>This step only needs to be done if value being entered does not belong in current slot chosen.</li>
-</ul>
-</dd>
-</dl>
-</li>
+<div><ol class="arabic">
 <li><dl class="first docutils">
 <dt>Click &#8220;+ Value&#8221; (top right)</dt>
-<dd><ul class="first last">
-<li>A new row will appear.</li>
+<dd><ul class="first last simple">
+<li>A new row will appear</li>
+<li>Another grid will appear on the right hand side with a Name and Value column</li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>Fill out Value field</dt>
-<dd><ul class="first last">
-<li>This field is dependent of the slot. This Value can be a verb (find, search...etc.), the name of a city or county, a department or office of the city/county. . .etc.</li>
+<dd><ul class="first last simple">
+<li>This field is dependent of the slot. This value can be a verb (find, search...etc.), the name of a city or county, a department or office of the city/county, a noun, etc.</li>
 <li><dl class="first docutils">
-<dt>To add a synonym click within the synonym column next to the desired value. After typing the word click the comma key to finish adding synonym.</dt>
-<dd><em>Synonyms can help address a greater range of ways a user may ask a question.</em></dd>
+<dt>To add a synonym click within the synonym column next to the desired value. After typing the word press the comma key [,] to append the synonym</dt>
+<dd><em>Synonyms can help catch other possible user input in order to answer the proper questions</em></dd>
 </dl>
 </li>
 </ul>
 </dd>
 </dl>
 </li>
-<li>Click Save (top left)</li>
+<li><dl class="first docutils">
+<dt>Metadata for Slots</dt>
+<dd><ul class="first simple">
+<li>If slots have additional metadata that can be used in association to a slot value, this would be added in the right hand side of the grid</li>
+<li>This metadata is available for use in handlebar templates</li>
+</ul>
+<p>Metadata Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Slot</span><span class="p">:</span> <span class="n">US_STATE</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">colorado</span> <span class="p">(</span><span class="n">full</span> <span class="n">name</span><span class="p">)</span>
+<span class="n">synonym</span><span class="p">:</span> <span class="p">[]</span> <span class="c1">## no synonyms</span>
+<span class="n">metadata</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">abbr</span><span class="p">,</span>
+    <span class="n">value</span><span class="p">:</span> <span class="n">co</span>
+<span class="p">}</span>
+<span class="c1">## in handlebars, &#39;abbr&#39; can be accessed e.g. {{inputs.State.abbr}}</span>
+</pre></div>
+</div>
+<img alt="_images/metadata_slot.png" class="last" src="_images/metadata_slot.png" />
+</dd>
+</dl>
+</li>
+<li><p class="first">Click Save (bottom right)</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
 <div class="section" id="delete-value">
 <h3>Delete Value<a class="headerlink" href="#delete-value" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><ul>
-<li><p class="first">Click the &#8220;X&#8221; at the end of the row of the desire value.</p>
-<blockquote>
-<div><p><em>When mouse hovers over &#8220;X&#8221; Delete Entry will appear</em></p>
-</div></blockquote>
-</li>
+<div><ul class="simple">
+<li>Click the trash can at the right of the row for which slot value to be removed</li>
 </ul>
 </div></blockquote>
 </div>
@@ -221,24 +239,104 @@
 <blockquote>
 <div><ul class="simple">
 <li>Click desired synonym column</li>
-<li>X&#8217;s will appear net to synonyms. Click on the X of the synonym(s) you would like to delete.</li>
+<li>X&#8217;s will appear next to synonyms. To remove specific synonym(s), click on the X located within the synonym block</li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="update-alexa">
-<h3>Update Alexa<a class="headerlink" href="#update-alexa" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>Once there is at least once value in each slot category you can update Alexa.</li>
-<li>This update allows the skill to be built and testing to commence.</li>
-</ul>
-</div>
 <div class="section" id="settings-slot">
 <h3>Settings Slot<a class="headerlink" href="#settings-slot" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Scroll to Predefined Slots</p>
+</li>
+<li><p class="first">Double-Click the <strong>SETTINGS_CATEGORY</strong> slot</p>
+</li>
+<li><p class="first">Similar to adding slot values and synonyms, fill out desired settings</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="32%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Value</td>
+<td>Synonyms</td>
+<td>Slots</td>
+</tr>
+<tr class="row-even"><td>zipcode</td>
+<td>zip code</td>
+<td>ENVIRONMENT.NUMBER</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p class="first">In SETTINGS_CATEGORY, a slot type has to be provided for the type the value is meant to be</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click into the <strong>Slots</strong> Column, select a slot type from the drop down menu</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Metadata can optionally be added for SETTINGS_CATEGORY as well</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<img alt="_images/settings_category_slot.png" src="_images/settings_category_slot.png" />
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="create-intents">
 <h2>Create Intents<a class="headerlink" href="#create-intents" title="Permalink to this headline">¶</a></h2>
-<img alt="_images/intent_grid.png" src="_images/intent_grid.png" />
+<blockquote>
+<div><img alt="_images/intent_grid.png" src="_images/intent_grid.png" />
+<ol class="arabic">
+<li><p class="first">Click <strong>+ New Intent</strong> in bottom right corner of intents tab</p>
+</li>
+<li><p class="first">Type in an Intent Display Name appropriate to what this intent will answer</p>
+<blockquote>
+<div><ul class="simple">
+<li>The Intent Name will be shown on the right</li>
+<li>The Intent Name is not editable, for display and server use</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Type the mad-lib</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Make sure to think of all possible ways a user may phrase the mad-lib, or question</p>
+</li>
+<li><p class="first">Once phrase has all possible slots to be used, click <strong>+ Sample</strong> to the right to add to the intent samples grid</p>
+</li>
+<li><p class="first">Add the <cite>fill-in-the-blank</cite> slots by using braces. e.g. {SlotName}</p>
+</li>
+<li><p class="first">Slots are recommended to have the beginning letter upper-cased for each word:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;how do I </span><span class="si">{ActionExample}</span><span class="s2"> a skill&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">A new row will be created for each slot that is used within the intent</p>
+</li>
+<li><p class="first">Apply a Slot Type in the middle column on the right side for the Slot used in an utterance. The Slot Type will have the available values to be used within the phrase</p>
+</li>
+<li><p class="first">Make sure to use unique enough phrases in each intent so that the skill can correctly answer each user question as accurately as possible</p>
+</li>
+<li><p class="first">Select a primary sample to be used to view in Insights and Interactions</p>
+<blockquote>
+<div><ul class="simple">
+<li>It is recommended to use a sample that best describes the potential questions and intent</li>
+<li>It is also recommended if possible to use a sample with a many of the slots within the intent</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<img alt="_images/create_intent.gif" src="_images/create_intent.gif" />
+</div></blockquote>
 </div>
 </div>
 
