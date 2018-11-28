@@ -12,12 +12,12 @@ Add Value
 ---------
 
     #. Select the Slot you would like to enter value within. 
-        * This step only needs to be done when if value being entered does not belong in current slot choosen. 
+        * This step only needs to be done if value being entered does not belong in current slot chosen. 
     #. Click "+ Value" (top right)
         *  A new row will appear.
     #. Fill out Value field 
         * This field is dependent of the slot. This Value can be a verb (find, search...etc.), the name of a city or county, a department or office of the city/county. . .etc.
-        * To add a synonym click within the snynonym colum next to the desired value. After typing the word click the comma key to finish adding synonym. 
+        * To add a synonym click within the synonym column next to the desired value. After typing the word click the comma key to finish adding synonym. 
             *Synonyms can help address a greater range of ways a user may ask a question.* 
     #. Click Save (top left)
 
@@ -31,8 +31,8 @@ Delete Value
 --------------
 Delete Synonym
 --------------
-    * Click desired synonym colum
-    * Xs will appear net to synonyms. Click on the X of the synonym(s) you owuld like to delete. 
+    * Click desired synonym column
+    * X's will appear net to synonyms. Click on the X of the synonym(s) you would like to delete. 
 
 ------------
 Update Alexa

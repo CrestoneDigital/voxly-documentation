@@ -164,15 +164,17 @@
 <p>Name the connectors to be unique and specific to what they are used for. Multiple connectors may be created of the same type.</p>
 <div class="section" id="carto-connector">
 <h2>Carto Connector<a class="headerlink" href="#carto-connector" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://carto.com/help/working-with-data/managing-your-data/">Carto Query Help</a></p>
 <img alt="_images/census_carto_1.png" src="_images/census_carto_1.png" />
 <img alt="_images/census_carto_response_2.png" src="_images/census_carto_response_2.png" />
 </div>
 <div class="section" id="airtable">
 <h2>Airtable<a class="headerlink" href="#airtable" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://support.airtable.com/hc/en-us/articles/202624989-Guide-to-views">Airtable Query Help</a></p>
 <img alt="_images/integration_airtable.gif" src="_images/integration_airtable.gif" />
 <p>The API Key is located in the Airtable User Account. Click on the User Image in the top right, and click on <strong>Account</strong>. API Key is located in the Overview section under API. For first time, click <strong>Generate API key</strong> or use the personal API key that&#8217;s been generated. The API Key and Airtable API link to get the Base ID is highlighted in the image below.</p>
 <img alt="_images/airtable_api_key.png" src="_images/airtable_api_key.png" />
-<p>To get the Base ID, press the <cite>Airtable API</cite> above where the API Key is in the User Account Settings. Once pressed, a new tab will open. The Airtable API for &#8220;TABLE NAME&#8221; will be displayed at the top. To change which table or data-set, press the down arrow. Scroll down on the right side, the Base ID is highlighted in the Example Using Bearer Token Example.</p>
+<p>To get the Base ID, press the <cite>Airtable API</cite> above where the API Key is found. Once pressed, a new tab will open. The Airtable API for &#8220;TABLE NAME&#8221; will be displayed at the top. To change which table or data-set, press the down arrow. To find the Base ID, scroll down on the right side. The Base ID is highlighted in the &#8220;Example Using Bearer Token Example&#8221;.</p>
 <img alt="_images/base_id_airtable.png" src="_images/base_id_airtable.png" />
 <p>Once the Airtable Connector has been created, navigate to interactions to begin creating new interactions using the new connector.</p>
 <img alt="_images/airtable_1.gif" src="_images/airtable_1.gif" />
@@ -192,37 +194,63 @@
 <li>View should be the <cite>Grid view.</cite></li>
 <li>Filter on a particular value. Ex.) Category = &#8220;BRANDY&#8221; should return all records with category matching &#8220;BRANDY&#8221; and the records brand_description</li>
 </ul>
+<p>In the Response description, type:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{{</span><span class="n">connectors</span><span class="o">.</span><span class="n">c1</span><span class="o">.</span><span class="n">first</span><span class="o">.</span><span class="n">brand_description</span><span class="p">}}</span> <span class="p">{{</span><span class="n">connectors</span><span class="o">.</span><span class="n">c1</span><span class="o">.</span><span class="n">first</span><span class="o">.</span><span class="n">Category</span><span class="p">}}</span>
+</pre></div>
+</div>
+<p>Those were the two fields that were wanted to be returned. To test, in the top left corner press <strong>Test</strong>. On the right hand side, click the <strong>+</strong>. Name the name to represent what will be tested, ex.) <cite>Category and Brand Description</cite>. In the <strong>Config</strong> textarea, type <cite>{}</cite>. Save. To test, press the lightning bolt to the left of the name of the test. The test will run and then display what was written within the handlebars, found above.</p>
+<img alt="_images/airtable_test_ex.png" src="_images/airtable_test_ex.png" />
 </div>
 <div class="section" id="arcgis-online">
 <h2>ArcGIS Online<a class="headerlink" href="#arcgis-online" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://desktop.arcgis.com/en/arcmap/10.3/map/working-with-layers/building-a-query-expression.htm">ArcGIS Simple SQL Expression Help</a></p>
 </div>
 <div class="section" id="ckan">
 <h2>CKAN<a class="headerlink" href="#ckan" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://docs.ckan.org/en/ckan-2.7.3/api/#module-ckan.logic.action.get">CKAN Action API Help</a></p>
 </div>
 <div class="section" id="google-sheets-connector">
 <h2>Google Sheets Connector<a class="headerlink" href="#google-sheets-connector" title="Permalink to this headline">¶</a></h2>
-<p>The spreadsheet ID is highlighted in the Google Sheet URL. The value is followed by the spreadsheets/d/{spreadsheet ID}/</p>
+<p><a class="reference external" href="https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/">GS Query Help</a>
+The spreadsheet ID is highlighted in the Google Sheet URL. The value is followed by the spreadsheets/d/{spreadsheet ID}/</p>
 <img alt="_images/google_sheet_id.png" src="_images/google_sheet_id.png" />
-<p>The Google Sheet GID, which is used within the interaction is the right number highlighted in the image above. It can be found by copying the number after the <strong>#gid={gid}</strong>.</p>
-<p>The GID will change when changing table tabs which are located at the bottom left.</p>
+<p>The Google Sheet GID, which is used within the interaction is the right number highlighted in the image above. It can be found by copying the number after the <strong>#gid=</strong>.</p>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docs</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">spreadsheets</span><span class="o">/</span><span class="n">d</span><span class="o">/</span><span class="mi">1</span><span class="n">huv8Qq7JfxNBVNdRUpA4QY49HXcRWZYwIE4TIHXnQjg</span><span class="o">/</span><span class="n">edit</span><span class="c1">#gid=1605080141</span>
+<span class="c1">## The spreadsheet ID is 1huv8Qq7JfxNBVNdRUpA4QY49HXcRWZYwIE4TIHXnQjg</span>
+<span class="c1">## The GID is 1605080141</span>
+</pre></div>
+</div>
+<p>The GID will change when switching between table tabs which are located at the bottom left. To see, find the gid in the url, and see them change when switching between two or three different tables.</p>
+<p>Navigate to the interactions. Drag and drop the Google Sheet Connector that was just created.
+There will be a connector name, if this is the second connector within an interation, it may be called <cite>c2</cite> already.
+There is a Google Grid ID text field, this is where to copy and paste the GID that was found from the URL above.</p>
+<p>For the query, type out:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Select</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span> <span class="n">where</span> <span class="n">E</span> <span class="o">=</span> <span class="s2">&quot;BRANDY&quot;</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="lambda">
 <h2>Lambda<a class="headerlink" href="#lambda" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="opendatasoft">
 <h2>OpenDataSoft<a class="headerlink" href="#opendatasoft" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://help.opendatasoft.com/platform/en/exploring_catalog_and_datasets/03_searching_the_data/search.html#query-language-and-geo-filtering">OpenDataSoft Query Help</a></p>
 </div>
 <div class="section" id="postgres">
 <h2>PostGres<a class="headerlink" href="#postgres" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.postgresql.org/docs/9.3/tutorial-select.html">PostGres Query Help</a></p>
 </div>
 <div class="section" id="rest-api">
 <h2>REST API<a class="headerlink" href="#rest-api" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="salesforce">
 <h2>Salesforce<a class="headerlink" href="#salesforce" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language Help</a></p>
 </div>
 <div class="section" id="socrata-connector">
 <h2>Socrata Connector<a class="headerlink" href="#socrata-connector" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://dev.socrata.com/docs/queries/select.html">Socrata SOQL Help</a></p>
 </div>
 </div>
 

@@ -52,7 +52,7 @@ Speak Text Button
 News Feed
 =========
 
-.. image:: ./images/NewsFeed.png
+.. image:: ./images/news_feed.png
 
 -------------
 News Feed URL
@@ -71,11 +71,11 @@ Refresh
 Empty Message
 -------------
 
-* This message is what Alexa Communicates wheen there  is no new content to give. 
+* This message is what Alexa Communicates when there  is no new content to give. 
 
-----------------
-Days to Refernce
-----------------
+-----------------
+Days to Reference
+-----------------
 
 * Allows Alexa to search further than the day content was requested, upon finding no new content for that day.
 
@@ -83,13 +83,13 @@ Days to Refernce
 Remove Text
 -----------
 
-* If RSS cuts off a story, this text boxs allows you to construct a message to further direct users.
+* If RSS cuts off a story, this text boxes allows you to construct a message to further direct users.
 
 ----------------
 Sync Data Button
 ----------------
 
-* Syns most updated data.
+* Sync most updated data.
 
 --------------
 Clear All Data
@@ -106,13 +106,13 @@ Slots
 
 The primary function of this page is to create values to further be used within your management system. The drop down contains a list of predetermined slot categories,
 values to be added will correspond to these categories. This section can best be thought of as a word bank, you are adding words (values) that relate to each category. 
-Please see below for futher examples. 
+Please see below for further examples. 
 
-.. image:: ./images/SlotsFAQ.png
+.. image:: ./images/slots_grid.png
 
-*Exmaple of values created within the Verb slot*
+*Example of values created within the Verb slot*
 
-.. image:: ./images/SlotUseExample.png
+.. image:: ./images/use_slots.gif
 
 *Values created within this page will give content to choose from slot categories when creating/editing FAQs and Events*
 

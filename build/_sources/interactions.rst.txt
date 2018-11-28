@@ -7,7 +7,7 @@ your community members will be requesting. You will have the ability to type the
 
 Every skill starts with two interactions: Help and Welcome. Specify the skill help and welcome messages.
 
-.. image:: ./images/FAQGrid.png
+.. image:: ./images/interactions.png
 
 ================================
 Features Within Interaction Grid
