@@ -116,17 +116,28 @@ Integration
 * If their are open source connectors, they can be added under Integration. 
     #. Click add
     #. Select account type
-    #. Input information for data to be queried 
+    #. Input information for data to be queried
 
-    *Specific to helping pull events and FAQ information*
+    .. image:: ./images/integration.gif
+
+    *Specific to helping pull events and interaction information*
 
 ============
 Manage Users
 ============
 
+.. image:: ./images/manager_user.gif
+
+Ability to create multiple users to help manage content for particular skill.
+
 =====
 Roles
 =====
+Example of creating role specific for Events and Event management
+
+.. image:: ./images/roles.gif
+
+Ability to create context driven roles for users. Users with specific roles would only be able to view and work within the roles they have been assigned.
 
 ==========
 Events Tab

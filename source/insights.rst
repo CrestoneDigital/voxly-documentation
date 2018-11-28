@@ -13,9 +13,11 @@ Features Within Insights
 * Filter Interactions  
 
     * Intent type
+
         * Select buttons on top left or use search bar
 
     * By Date
+        
         * Select this month or last
         * Select this year or last
         * Select range of dates

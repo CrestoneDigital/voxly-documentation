@@ -11,12 +11,16 @@ Deployments
 
 
 * Filters
+
     * Status Filter Button
+        
         * Located at top 
         * Searches by `All | Error | Finished`
 
 * Grid
+    
     * Displays: 
+        
         * Status of Deployment
         * Devices: Alexa and Google
         * Error if occurred
@@ -30,12 +34,16 @@ Logins
 
 
 * Filters
+
     * Search Bar
+        
         * Located at top left
         * Filters `names`
 
 * Grid
+
     * Displays:
+        
         * Names
         * Email
         * Status
