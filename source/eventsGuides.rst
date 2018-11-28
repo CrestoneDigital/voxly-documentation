@@ -23,8 +23,8 @@ Create Event
 Edit Event
 ==========
 
-* Click on your desired event will open a side panel to be used to edit or delete the event.
-* Event will appear highlight and you will see event details within side panel. 
+* Click on the desired event will open a side panel to be used to edit or delete the event.
+* Event will appear highlighted and event details will be shown within side panel. 
 * Click "Update Button" when editing is completed, or changes will not be saved.
 
 ============

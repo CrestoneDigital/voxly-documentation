@@ -11,7 +11,7 @@ Create Slots
 Add Value
 ---------
 
-    #. Select the Slot you would like to enter value within. 
+    #. Select the Slot and enter the value. 
         * This step only needs to be done if value being entered does not belong in current slot chosen. 
     #. Click "+ Value" (top right)
         *  A new row will appear.
@@ -32,13 +32,13 @@ Delete Value
 Delete Synonym
 --------------
     * Click desired synonym column
-    * X's will appear net to synonyms. Click on the X of the synonym(s) you would like to delete. 
+    * X's will appear next to synonyms. To remove specific synonym(s), click on the X located within the synonym block. 
 
 ------------
 Update Alexa
 ------------
 
-* Once there is at least once value in each slot category you can update Alexa.
+* Once there is at least once value in each slot category, the manager can update Alexa.
 * This update allows the skill to be built and testing to commence.
 
 -------------

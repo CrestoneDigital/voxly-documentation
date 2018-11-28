@@ -26,4 +26,4 @@ Features Within Events Page
     * Search events by display and voice messages
     * Located to the top right of the Events grid
 
-You can see Events Guides here: :ref:`Events Guides`
+See Events Guides here: :ref:`Events Guides`
