@@ -10,6 +10,7 @@ Create Event
 * Category - Choose event category
 * Areas - Select the areas (cities) in which the event will take place
 * Location of event - Enter event address, specific building, or cross streets
+
     * This information will not be spoken to a user, rather it will be displayed if using a smart speaker with a screen.
 * Voice Message - Type event description here.
 * Display Message - Event description typed in this field will be displayed on a screen.
@@ -33,4 +34,5 @@ Delete Event
 
 * Click on desired event to open side panel 
 * Click Delete button at the bottom of panel
+
     *One click deletes event*

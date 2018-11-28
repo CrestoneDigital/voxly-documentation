@@ -21,13 +21,15 @@ Create Interaction and Answer
 
     *Slots filled within the template give Alexa & Google context to search for information*
 
-Data Fields
------------
+Data Field
+----------
 This data field will be found throughout the different components
 
-* List - Collection or list of Items; ex. News or Events have multiple items to iterate through
-    * Path - Specifies how to interpret the text; considered input. Ex.) connectors.data is the list
-    * Function - Interpret input as a function to be called, some functions may take arguments. **See Data**
+* List|Left-Hand Side|Right-Hand Side|Name - Collection or list of Items; ex. News or Events have multiple items to iterate through
+    * Path - Specifies how to interpret the text; considered input
+    
+        * e.g. connectors.data is the list
+    * Function - Interpret input as a function to be called, some functions may take arguments.
     * String - Interpret input as String
     * Number - Interpret input as a Number
 
@@ -54,7 +56,7 @@ This data field will be found throughout the different components
                 * Background Image URL - The image that will be used as the background. The right button will open the link in a new tab to display image
                 * Accessibility Text
 
-            * Directives - Playing video, audio, or third party services such as spotify
+            * **Directives** - Playing video, audio, or third party services such as spotify
                 
                 * Play Spotify
                     * Playlist - URL
@@ -78,7 +80,7 @@ This data field will be found throughout the different components
             * Voice Message - Prompt message for third party account linking
 
         * Loop
-            * List - See above **Data Fields**
+            * List - `Data Field`_
             * Prompt for Next - Response for next item if there is more items. Ex.) "Would you like to hear the next item?"
             * Card Title
             * Voice Message
@@ -93,8 +95,14 @@ This data field will be found throughout the different components
 
         * Check Intent
             * Intent Dropdown - Allows manager to make path decisions for an interaction. Can add several different intents and have a response if the user spoke one of the specified intents, or not.
-        * **Add Variables** - Create inputs to be used in functions and responses
+        * Check Variable
+            * Left-Hand Side - `Data Field`_
+            * Evaluation
+            * Right-Hand Side - `Data Field`_ *if applicable based on evaluation*
+        * Add Variables - Create inputs to be used in functions and responses
+            * Name - `Data Field`_
         * Save Settings - Similar to `Add Variables`
+            * Name - `Data Field`_
             * Setting Values - create visitor_settings for users for later use. There is a name, the input, and the input type.
 
         * Connectors

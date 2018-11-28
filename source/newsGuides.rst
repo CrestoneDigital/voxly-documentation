@@ -30,4 +30,5 @@ Delete News Record
 
 * Click on desired news record to open side panel 
 * Click "Delete News Record" button at the bottom of panel
+
     *One click deletes News Record*

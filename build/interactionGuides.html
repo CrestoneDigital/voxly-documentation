@@ -93,7 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="eventsGuides.html">Events Guides</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Interaction Guides</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#create-interaction-and-answer">Create Interaction and Answer</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#data-fields">Data Fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-field">Data Field</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#edit-interaction">Edit Interaction</a></li>
@@ -199,17 +199,26 @@
 </dl>
 </li>
 </ol>
-<div class="section" id="data-fields">
-<h3>Data Fields<a class="headerlink" href="#data-fields" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="data-field">
+<h3>Data Field<a class="headerlink" href="#data-field" title="Permalink to this headline">¶</a></h3>
 <p>This data field will be found throughout the different components</p>
-<ul class="simple">
+<ul>
 <li><dl class="first docutils">
-<dt>List - Collection or list of Items; ex. News or Events have multiple items to iterate through</dt>
+<dt>List|Left-Hand Side|Right-Hand Side|Name - Collection or list of Items; ex. News or Events have multiple items to iterate through</dt>
 <dd><ul class="first last">
-<li>Path - Specifies how to interpret the text; considered input. Ex.) connectors.data is the list</li>
-<li>Function - Interpret input as a function to be called, some functions may take arguments. <strong>See Data</strong></li>
-<li>String - Interpret input as String</li>
-<li>Number - Interpret input as a Number</li>
+<li><p class="first">Path - Specifies how to interpret the text; considered input</p>
+<blockquote>
+<div><ul class="simple">
+<li>e.g. connectors.data is the list</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Function - Interpret input as a function to be called, some functions may take arguments.</p>
+</li>
+<li><p class="first">String - Interpret input as String</p>
+</li>
+<li><p class="first">Number - Interpret input as a Number</p>
+</li>
 </ul>
 </dd>
 </dl>
@@ -254,7 +263,7 @@
 </ul>
 </div></blockquote>
 <ul class="last">
-<li><p class="first">Directives - Playing video, audio, or third party services such as spotify</p>
+<li><p class="first"><strong>Directives</strong> - Playing video, audio, or third party services such as spotify</p>
 <blockquote>
 <div><ul class="simple">
 <li><dl class="first docutils">
@@ -308,7 +317,7 @@
 <li><dl class="first docutils">
 <dt>Loop</dt>
 <dd><ul class="first last simple">
-<li>List - See above <strong>Data Fields</strong></li>
+<li>List - <a class="reference internal" href="#data-field">Data Field</a></li>
 <li>Prompt for Next - Response for next item if there is more items. Ex.) &#8220;Would you like to hear the next item?&#8221;</li>
 <li>Card Title</li>
 <li>Voice Message</li>
@@ -337,11 +346,28 @@
 </dd>
 </dl>
 </li>
-<li><p class="first"><strong>Add Variables</strong> - Create inputs to be used in functions and responses</p>
+<li><dl class="first docutils">
+<dt>Check Variable</dt>
+<dd><ul class="first last simple">
+<li>Left-Hand Side - <a class="reference internal" href="#data-field">Data Field</a></li>
+<li>Evaluation</li>
+<li>Right-Hand Side - <a class="reference internal" href="#data-field">Data Field</a> <em>if applicable based on evaluation</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Add Variables - Create inputs to be used in functions and responses</dt>
+<dd><ul class="first last simple">
+<li>Name - <a class="reference internal" href="#data-field">Data Field</a></li>
+</ul>
+</dd>
+</dl>
 </li>
 <li><dl class="first docutils">
 <dt>Save Settings - Similar to <cite>Add Variables</cite></dt>
 <dd><ul class="first last simple">
+<li>Name - <a class="reference internal" href="#data-field">Data Field</a></li>
 <li>Setting Values - create visitor_settings for users for later use. There is a name, the input, and the input type.</li>
 </ul>
 </dd>
