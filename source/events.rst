@@ -23,7 +23,7 @@ Features Within Events Page
         * All | Pending | Approved 
         * View of page will shift to display selected type
 * Search Events
-    * Searches events by display and voice messages
+    * Search events by display and voice messages
     * Located to the top right of the Events grid
 
 You can see Events Guides here: :ref:`Events Guides`

@@ -3,11 +3,11 @@ Privacy Policy
 
 Voxly Privacy Policy 
 
-This privacy policy governs your use of the software application Voxly for Amazon Alexa that was created by Crestone Digital. The application is an Amazon Echo app that provides information from your County's/City's open data. 
+This privacy policy governs your use of the software application Voxly for Amazon Alexa that was created by Xentity Corporation. The application is an Amazon Echo app that provides information from your County's/City's open data. 
 
 User Provided Information
 
-The Company will use the personal data which you have provided to the Company for the purpose to fulfill services and for understanding how the Company can improve its services to you. The Company's primary purpose in collecting information from you is to allow you to use the Alexa skill and various features and services made available on or in relation to the Alea skill. 
+The Company will use the personal data which you have provided to the Company for the purpose to fulfill services and for understanding how the Company can improve its services to you. The Company's primary purpose in collecting information from you is to allow you to use the Alexa skill and various features and services made available on or in relation to the Alexa skill. 
 
 Automatically Collected Information
 

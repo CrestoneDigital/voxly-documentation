@@ -18,7 +18,7 @@ Features Within Insights
     * By Date
         * Select this month or last
         * Select this year or last
-        * Or Select range of dates
+        * Select range of dates
 
 * "+" button - expands view of each questions   
     * Will display the response given
