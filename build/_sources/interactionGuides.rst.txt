@@ -43,17 +43,20 @@ This data field will be found throughout the different components
             * Card Title - Header for the message on devices with a screen
             * Display Message - Message to be shown on devices with a screen
             * Image URL - Image shown on devices with a screen, the sizes are for varying device screen sizes
+
                 * Small Image - recommended size: 720 width x 480 height
                 * Large Image - recommended size: 1200 width x 800 height
             * Accessibility Text - Description of the image (For Screen Readers)
             * Display Templates - Defaults to a basic card template
 
             If display card template is selected, it will enable/disable certain fields.
+
                 * Background Image URL - The image that will be used as the background. The right button will open the link in a new tab to display image
                 * Accessibility Text
 
             * Directives - Playing video, audio, or third party services such as spotify
-                    * Play Spotify
+                
+                * Play Spotify
                     * Playlist - URL
                 
                 * Play Video
@@ -90,8 +93,7 @@ This data field will be found throughout the different components
 
         * Check Intent
             * Intent Dropdown - Allows manager to make path decisions for an interaction. Can add several different intents and have a response if the user spoke one of the specified intents, or not.
-
-        * Add Variables - Create inputs to be used in functions and responses
+        * **Add Variables** - Create inputs to be used in functions and responses
         * Save Settings - Similar to `Add Variables`
             * Setting Values - create visitor_settings for users for later use. There is a name, the input, and the input type.
 
@@ -105,14 +107,15 @@ This data field will be found throughout the different components
             * Slots - Specific for Intent of this interaction
             * Value - Input from users utterance. If user said the particular slot key.
         
-        * Settings - Visitor Settings the tenant created, or saved from the `Save Settings` Component
-        * Connectors - Integration, third party data sources
+        * **Settings** - Visitor Settings the tenant created, or saved from the `Save Settings` Component
+        * **Connectors** - Integration, third party data sources
+
             * c1 - Specific connector created from the Connector Components
                 * First - First item from list
                 * Last - Last item from list
                 * Length - Length of list
 
-        * Var - variables created from `Add Variables` Component
+        * **Var** - variables created from `Add Variables` Component
         * Function
             * Array
                 * random - picks a random item from the Array

@@ -226,40 +226,45 @@
 <ul class="last">
 <li><dl class="first docutils">
 <dt>Response</dt>
-<dd><ul class="first simple">
-<li>Voice Message - Spoken message for a response</li>
-<li>Card Title - Header for the message on devices with a screen</li>
-<li>Display Message - Message to be shown on devices with a screen</li>
-<li><dl class="first docutils">
-<dt>Image URL - Image shown on devices with a screen, the sizes are for varying device screen sizes</dt>
-<dd><ul class="first last">
+<dd><ul class="first">
+<li><p class="first">Voice Message - Spoken message for a response</p>
+</li>
+<li><p class="first">Card Title - Header for the message on devices with a screen</p>
+</li>
+<li><p class="first">Display Message - Message to be shown on devices with a screen</p>
+</li>
+<li><p class="first">Image URL - Image shown on devices with a screen, the sizes are for varying device screen sizes</p>
+<blockquote>
+<div><ul class="simple">
 <li>Small Image - recommended size: 720 width x 480 height</li>
 <li>Large Image - recommended size: 1200 width x 800 height</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Accessibility Text - Description of the image (For Screen Readers)</p>
+</li>
+<li><p class="first">Display Templates - Defaults to a basic card template</p>
+</li>
+</ul>
+<p>If display card template is selected, it will enable/disable certain fields.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Background Image URL - The image that will be used as the background. The right button will open the link in a new tab to display image</li>
+<li>Accessibility Text</li>
+</ul>
+</div></blockquote>
+<ul class="last">
+<li><p class="first">Directives - Playing video, audio, or third party services such as spotify</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="first docutils">
+<dt>Play Spotify</dt>
+<dd><ul class="first last">
+<li>Playlist - URL</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li>Accessibility Text - Description of the image (For Screen Readers)</li>
-<li>Display Templates - Defaults to a basic card template</li>
-</ul>
-<dl class="docutils">
-<dt>If display card template is selected, it will enable/disable certain fields.</dt>
-<dd><ul class="first last simple">
-<li>Background Image URL - The image that will be used as the background. The right button will open the link in a new tab to display image</li>
-<li>Accessibility Text</li>
-</ul>
-</dd>
-</dl>
-<ul class="last">
-<li><dl class="first docutils">
-<dt>Directives - Playing video, audio, or third party services such as spotify</dt>
-<dd><blockquote class="first">
-<div><ul class="simple">
-<li>Play Spotify</li>
-<li>Playlist - URL</li>
-</ul>
-</div></blockquote>
-<ul class="last simple">
 <li><dl class="first docutils">
 <dt>Play Video</dt>
 <dd><ul class="first last">
@@ -286,8 +291,7 @@
 </dl>
 </li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
 </dd>
@@ -333,7 +337,7 @@
 </dd>
 </dl>
 </li>
-<li><p class="first">Add Variables - Create inputs to be used in functions and responses</p>
+<li><p class="first"><strong>Add Variables</strong> - Create inputs to be used in functions and responses</p>
 </li>
 <li><dl class="first docutils">
 <dt>Save Settings - Similar to <cite>Add Variables</cite></dt>
@@ -358,20 +362,21 @@
 </li>
 <li><p class="first">Data - Located in the left menu as the right tab under <strong>Data</strong>, right of <strong>Components</strong>. Items are drag-n-droppable for components, these can be use to create queries, and add to the responses of the interactions.</p>
 <blockquote>
-<div><ul class="simple">
+<div><ul>
 <li><dl class="first docutils">
 <dt>Inputs</dt>
-<dd><ul class="first last">
+<dd><ul class="first last simple">
 <li>Slots - Specific for Intent of this interaction</li>
 <li>Value - Input from users utterance. If user said the particular slot key.</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li>Settings - Visitor Settings the tenant created, or saved from the <cite>Save Settings</cite> Component</li>
-<li><dl class="first docutils">
-<dt>Connectors - Integration, third party data sources</dt>
-<dd><ul class="first last">
+<li><p class="first"><strong>Settings</strong> - Visitor Settings the tenant created, or saved from the <cite>Save Settings</cite> Component</p>
+</li>
+<li><p class="first"><strong>Connectors</strong> - Integration, third party data sources</p>
+<blockquote>
+<div><ul class="simple">
 <li><dl class="first docutils">
 <dt>c1 - Specific connector created from the Connector Components</dt>
 <dd><ul class="first last">
@@ -383,13 +388,13 @@
 </dl>
 </li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
-<li>Var - variables created from <cite>Add Variables</cite> Component</li>
+<li><p class="first"><strong>Var</strong> - variables created from <cite>Add Variables</cite> Component</p>
+</li>
 <li><dl class="first docutils">
 <dt>Function</dt>
-<dd><ul class="first last">
+<dd><ul class="first last simple">
 <li><dl class="first docutils">
 <dt>Array</dt>
 <dd><ul class="first last">

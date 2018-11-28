@@ -22,6 +22,7 @@ Add Value
     #. Fill out Value field 
         * This field is dependent of the slot. This value can be a verb (find, search...etc.), the name of a city or county, a department or office of the city/county, a noun, etc.
         * To add a synonym click within the synonym column next to the desired value. After typing the word press the comma key [,] to append the synonym 
+
             *Synonyms can help catch other possible user input in order to answer the proper questions*
     #. Metadata for Slots
         * If slots have additional metadata that can be used in association to a slot value, this would be added in the right hand side of the grid
