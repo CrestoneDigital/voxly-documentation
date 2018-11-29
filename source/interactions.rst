@@ -15,6 +15,7 @@ Features Within Interaction Grid
 * Filter Interactions
     * Interaction Status
         * Click on buttons to the top left
+
             * All | Pending | Approved
 
     * Intents Filter
@@ -38,4 +39,4 @@ How long should a response be cached (time to live or ttl)? The time to live is 
 
 In an effort to track and improve caching, Voxly tracks when a cached response or a fresh response is sent to the the user and is shown in the logs.
 
-View the Interaction Guides here:    :ref:`Interaction Guides`
+See Interaction Guides here:    :ref:`Interaction Guides`

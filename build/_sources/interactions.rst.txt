@@ -15,6 +15,7 @@ Features Within Interaction Grid
 * Filter Interactions
     * Interaction Status
         * Click on buttons to the top left
+        
             * All | Pending | Approved
 
     * Intents Filter
