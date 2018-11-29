@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'VoxlyDocs'
-copyright = u'2018, Izzy Heep'
+copyright = u'2018, Xentity Corporation'
 author = u'Izzy Heep'
 
 # The short X.Y version
@@ -134,7 +134,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'VoxlyDocs.tex', u'VoxlyDocs Documentation',
-     u'Izzy Heep', 'manual'),
+     u'Xentity Corporation', 'manual'),
 ]
 
 

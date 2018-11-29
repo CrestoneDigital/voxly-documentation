@@ -7,7 +7,8 @@ Guides
    gettingStartedGuides
    newsGuides
    eventsGuides
-   questionsGuides
-   historyGuides
+   interactionGuides
+   insightsGuides
    settingsGuides
    connectorsGuides
+   activityGuides

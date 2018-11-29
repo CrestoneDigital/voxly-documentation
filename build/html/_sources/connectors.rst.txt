@@ -8,11 +8,14 @@ Open Data         Socrata
 Open Data         Open Data Soft
 Open Data         CKAN
 Open Data         Junar
+Open Data         Airtable
 Geospatial        ArcGIS
 Geospatial        CARTO
 Geospatial        PostGIS
+Other             Salesforce
 Other             Google Sheets
 Other             REST Service
+Other             Lambda
 ================= ================== ================= ================
 
 

@@ -7,8 +7,9 @@ Features
    home
    news
    events
-   questions
-   history
+   interactions
+   insights
+   activity
    deployChanges
    settings
    help

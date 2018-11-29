@@ -20,8 +20,8 @@ Create News Record
 Edit News Record
 ================
 
-* Click on your desired news record will open a side panel to be used to edit or delete the record.
-* News Record will appear highlight and you will see details within side panel. 
+* Click on the desired news record will open a side panel to be used to edit or delete the record.
+* News Record will appear highlighted and the details will be shown within side panel. 
 * Click "Save" when editing is completed, or changes will not be saved.
 
 ==================
@@ -30,4 +30,5 @@ Delete News Record
 
 * Click on desired news record to open side panel 
 * Click "Delete News Record" button at the bottom of panel
+
     *One click deletes News Record*
