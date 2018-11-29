@@ -20,6 +20,7 @@ Features Within Events Page
     * Allows a sample of story to be heard
 * Filter Events By Status
     * Click on buttons on the bottom right of page
+    
         * All | Pending | Approved 
         * View of page will shift to display selected type
 * Search Events
