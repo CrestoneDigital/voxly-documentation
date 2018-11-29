@@ -95,6 +95,8 @@
 <li class="toctree-l2"><a class="reference internal" href="activity.html">Activity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="deployChanges.html">Deploy Changes</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#manage-users">Manage Users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roles">Roles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#general-tab">General Tab</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#invocation-name">Invocation Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#alexa-skill-and-google-id">Alexa Skill and Google ID</a></li>
@@ -102,6 +104,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#speak-text-button">Speak Text Button</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#account-linking">Account Linking</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#news-feed">News Feed</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#news-feed-url">News Feed URL</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#refresh">Refresh</a></li>
@@ -112,13 +115,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#clear-all-data">Clear All Data</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#events-feed">Events Feed</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#slots">Slots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#integration">Integration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#manage-users">Manage Users</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#roles">Roles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#events-tab">Events Tab</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#intents">Intents</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#services">Services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#integration">Integration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="help.html">Help</a></li>
@@ -181,6 +181,17 @@
   <div class="section" id="settings">
 <h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
 <p>Include paragraph about settings</p>
+<div class="section" id="manage-users">
+<h2>Manage Users<a class="headerlink" href="#manage-users" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/manager_user.gif" src="_images/manager_user.gif" />
+<p>Ability to create multiple users to help manage content for particular skill.</p>
+</div>
+<div class="section" id="roles">
+<h2>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
+<p>Example of creating role specific for Events and Event management</p>
+<img alt="_images/roles.gif" src="_images/roles.gif" />
+<p>Ability to create context driven roles for users. Users with specific roles would only be able to view and work within the roles they have been assigned.</p>
+</div>
 <div class="section" id="general-tab">
 <h2>General Tab<a class="headerlink" href="#general-tab" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/settings_general_1.png" src="_images/settings_general_1.png" />
@@ -211,8 +222,62 @@
 <ul class="simple">
 <li>This button allows a manager to test what the voice message will sound like.</li>
 </ul>
-<p><em>Note:Voice is what Alexa will speak. Display is what she will show, if using a screen. Please refer to writing section to better understand how to write messages that will be spoken.</em></p>
+<p><em>Note: Voice is what Alexa will speak. Display is what will be shown on screen if device has screen.</em>  <strong>ADD LINK TO WRITING VOICE</strong></p>
 </div>
+</div>
+<div class="section" id="account-linking">
+<h2>Account Linking<a class="headerlink" href="#account-linking" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/account_link.gif" src="_images/account_link.gif" />
+<p>Account Linking is for linking to third party connectors such as spotify.</p>
+<ul>
+<li><p class="first">Enable by checking account link box at top</p>
+</li>
+<li><dl class="first docutils">
+<dt>Security Provider information</dt>
+<dd><ul class="first last">
+<li><p class="first">Enable skill without linking - Allows users to use skill if not account was linked</p>
+</li>
+<li><p class="first">Type</p>
+<blockquote>
+<div><ul class="simple">
+<li>Auth Code Grant - <strong>Recommended</strong></li>
+<li>Implicit Grant</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Authorization URL - the url to authorize account linking, found within Third Party Developer account</p>
+</li>
+<li><p class="first">Domains</p>
+</li>
+<li><p class="first">Client ID</p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Scopes</dt>
+<dd><ul class="first last simple">
+<li>List of how skill with use accounts with third party service</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Auth Code Grant Type</strong></dt>
+<dd><ul class="first last simple">
+<li>Access Token URL - Third Party Access Token for skill to use third party service</li>
+<li>Client Secret Key - Private Key found in Third Party Developer account</li>
+<li>Access Token Scheme</li>
+<li>Default Token Expiration - Defaults to 3500 milliseconds</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>If manager is responsible for third party account, within Amazon Developer Alexa Skill &gt; Build &gt; Account Link will find the redirect URIs that are needed in the Third Party Developer Account</p>
+<img alt="_images/redirect_uri.png" src="_images/redirect_uri.png" />
+<img alt="_images/third_party_account_link.gif" src="_images/third_party_account_link.gif" />
 </div>
 <div class="section" id="news-feed">
 <h2>News Feed<a class="headerlink" href="#news-feed" title="Permalink to this headline">¶</a></h2>
@@ -261,6 +326,11 @@
 </ul>
 </div>
 </div>
+<div class="section" id="events-feed">
+<h2>Events Feed<a class="headerlink" href="#events-feed" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/events_feed.png" src="_images/events_feed.png" />
+<img alt="_images/new_events_feed.png" src="_images/new_events_feed.png" />
+</div>
 <div class="section" id="slots">
 <h2>Slots<a class="headerlink" href="#slots" title="Permalink to this headline">¶</a></h2>
 <p>The primary function of this page is to create values to further be used within the management system. The drop down contains a list of predetermined slot categories,
@@ -271,6 +341,9 @@ Please see below for further examples.</p>
 <img alt="_images/use_slots.gif" src="_images/use_slots.gif" />
 <p><em>Values created within this page will give content to choose from slot categories when creating/editing FAQs and Events</em></p>
 <p>See Slots Settings Guides here: <a class="reference internal" href="settingsGuides.html#settings-guides"><span class="std std-ref">Settings Guides</span></a></p>
+</div>
+<div class="section" id="intents">
+<h2>Intents<a class="headerlink" href="#intents" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="integration">
 <h2>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
@@ -288,26 +361,6 @@ Please see below for further examples.</p>
 </dl>
 </li>
 </ul>
-</div>
-<div class="section" id="manage-users">
-<h2>Manage Users<a class="headerlink" href="#manage-users" title="Permalink to this headline">¶</a></h2>
-<img alt="_images/manager_user.gif" src="_images/manager_user.gif" />
-<p>Ability to create multiple users to help manage content for particular skill.</p>
-</div>
-<div class="section" id="roles">
-<h2>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
-<p>Example of creating role specific for Events and Event management</p>
-<img alt="_images/roles.gif" src="_images/roles.gif" />
-<p>Ability to create context driven roles for users. Users with specific roles would only be able to view and work within the roles they have been assigned.</p>
-</div>
-<div class="section" id="events-tab">
-<h2>Events Tab<a class="headerlink" href="#events-tab" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="intents">
-<h2>Intents<a class="headerlink" href="#intents" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="services">
-<h2>Services<a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

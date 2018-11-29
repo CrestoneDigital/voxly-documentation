@@ -2,6 +2,24 @@ Settings
 ========
 Include paragraph about settings
 
+============
+Manage Users
+============
+
+.. image:: ./images/manager_user.gif
+
+Ability to create multiple users to help manage content for particular skill.
+
+=====
+Roles
+=====
+
+Example of creating role specific for Events and Event management
+
+.. image:: ./images/roles.gif
+
+Ability to create context driven roles for users. Users with specific roles would only be able to view and work within the roles they have been assigned.
+
 ===========
 General Tab
 ===========
@@ -11,7 +29,6 @@ General Tab
 .. image:: ./images/settings_general_2.png
 
 .. image:: ./images/settings_general_3.png
-
 
 ---------------
 Invocation Name
@@ -40,7 +57,39 @@ Speak Text Button
 
 * This button allows a manager to test what the voice message will sound like. 
 
-*Note:Voice is what Alexa will speak. Display is what she will show, if using a screen. Please refer to writing section to better understand how to write messages that will be spoken.*
+*Note: Voice is what Alexa will speak. Display is what will be shown on screen if device has screen.*  **ADD LINK TO WRITING VOICE**
+
+===============
+Account Linking
+===============
+
+.. image:: ./images/account_link.gif
+
+Account Linking is for linking to third party connectors such as spotify.
+
+* Enable by checking account link box at top
+* Security Provider information
+    * Enable skill without linking - Allows users to use skill if not account was linked
+    * Type
+
+        * Auth Code Grant - **Recommended**
+        * Implicit Grant
+    * Authorization URL - the url to authorize account linking, found within Third Party Developer account
+    * Domains
+    * Client ID
+* Scopes
+    * List of how skill with use accounts with third party service
+* **Auth Code Grant Type**
+    * Access Token URL - Third Party Access Token for skill to use third party service
+    * Client Secret Key - Private Key found in Third Party Developer account
+    * Access Token Scheme
+    * Default Token Expiration - Defaults to 3500 milliseconds
+
+If manager is responsible for third party account, within Amazon Developer Alexa Skill > Build > Account Link will find the redirect URIs that are needed in the Third Party Developer Account
+
+.. image:: ./images/redirect_uri.png
+
+.. image:: ./images/third_party_account_link.gif
 
 =========
 News Feed
@@ -52,20 +101,20 @@ News Feed
 News Feed URL
 -------------
 
-* Enter RSS feed in this field. 
+* Enter RSS feed in this field.
 
 -------
 Refresh
 -------
 
 * Ability to refresh news has options for daily or hourly. 
-* It is recommended the frequently refresh new content being made available to the community. 
+* It is recommended the frequently refresh new content being made available to the community.
 
 -------------
 Empty Message
 -------------
 
-* This message is what Alexa Communicates when there  is no new content to give. 
+* This message is what Alexa Communicates when there  is no new content to give.
 
 -----------------
 Days to Reference
@@ -91,6 +140,15 @@ Clear All Data
 
 * Clears all data. 
 
+===========
+Events Feed
+===========
+
+.. image:: ./images/events_feed.png
+
+
+.. image:: ./images/new_events_feed.png
+
 =====
 Slots
 =====
@@ -109,6 +167,10 @@ Please see below for further examples.
 
 See Slots Settings Guides here: :ref:`Settings Guides`
 
+=======
+Intents
+=======
+
 ===========
 Integration
 ===========
@@ -122,31 +184,3 @@ Integration
 
     *Specific to helping pull events and interaction information*
 
-============
-Manage Users
-============
-
-.. image:: ./images/manager_user.gif
-
-Ability to create multiple users to help manage content for particular skill.
-
-=====
-Roles
-=====
-Example of creating role specific for Events and Event management
-
-.. image:: ./images/roles.gif
-
-Ability to create context driven roles for users. Users with specific roles would only be able to view and work within the roles they have been assigned.
-
-==========
-Events Tab
-==========
-
-=======
-Intents
-=======
-
-========
-Services
-========
