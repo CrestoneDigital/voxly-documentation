@@ -26,38 +26,56 @@ General Tab
 
 .. image:: ./images/settings_general_1.png
 
-.. image:: ./images/settings_general_2.png
+#. Invocation Name
+    * The invocation name is how the skill will be invoked by users. Also known as a **wake word**. It is recommended to make the invocation name two words.
 
-.. image:: ./images/settings_general_3.png
+#. Short and Long Description
+    * Required to submit skill. Description shown to users within Alexa and Google app store.
 
----------------
-Invocation Name
----------------
+#. Alexa Skill and Google ID
+    * This ID is unique for each tenants' skill. This is how the server will register a specific skill.
+    *  Enter the skill ID associated with the Google or Amazon Alexa skill that was created.
 
-* The invocation name is how the skill will be invoked by users. Also known as wake word. It is recommended to make the invocation name two words.
+#. Small and Large Logo
+    * Logos for app stores.
 
--------------------------
-Alexa Skill and Google ID
--------------------------
-
-* This ID is unique for each tenants' skill. This is how the server will register a specific skill.
-*  Enter the skill ID associated with the Amazon Alexa skill that was created.
+#. Company Name & Email
+    * Associated company for skill
 
 *For instructions on setting up the Alexa skill account please see blank section*
 
-----------------
-Reprompt Message
-----------------
+.. image:: ./images/settings_general_2.png
 
-* This message will be relayed to a user when their questions was not understood. Meaning, Alexa understood she was spoken to but could not make out what was asked.
+#. Reprompt Message
+    * This message will be relayed to a user when their questions was not understood. Meaning, Alexa understood she was spoken to but could not make out what was asked.
 
------------------
-Speak Text Button
------------------
-
-* This button allows a manager to test what the voice message will sound like. 
+#. Speak Text Button
+    * This button allows a manager to test what the voice message will sound like. 
 
 *Note: Voice is what Alexa will speak. Display is what will be shown on screen if device has screen.*  **ADD LINK TO WRITING VOICE**
+
+#. Introduction
+    * App store introduction to skill
+
+#. Skill Category
+#. Google Voice Preference
+#. Sample Utterances
+    * Possible phrases that skill can be asked
+
+
+.. image:: ./images/settings_general_3.png
+
+#. Privacy & Compliance
+    * Allows Purchases
+    * Uses personal information
+    * Target audience
+    * Export Compliance
+    * Advertising
+    * Terms of Service URL
+    * Privacy URL
+
+#. Testing Instructions
+    * Explain how to use skill
 
 ===============
 Account Linking
@@ -67,7 +85,7 @@ Account Linking
 
 Account Linking is for linking to third party connectors such as spotify.
 
-* Enable by checking account link box at top
+* **Enable by checking account link box at top**
 * Security Provider information
     * Enable skill without linking - Allows users to use skill if not account was linked
     * Type
@@ -99,48 +117,32 @@ News Feed
 
 .. image:: ./images/news_feed.png
 
--------------
-News Feed URL
--------------
+#. Refresh - Refresh grid
+#. Empty Message - Text for if no news items exist
+#. Include Historical References - Allows Alexa to search further than the day content was requested, upon finding no new content for that initial range
+#. Historical Days to References - Number of days to search back from initial date
+#. Grid
 
-* Enter RSS feed in this field.
+    * Edit Feed
+    * Title
+    * Refresh Frequency
+    * Sync - Sync most updated data
+    * Clear Data - Clear feed data
+    * Enable Feed - Enable/Disable Feed until feed is ready
 
--------
-Refresh
--------
+#. **+ News Feed**
+    * Title - Feed title
+    * URL - Feed URL
+    * Refresh Rate - Rate at which feed will be harvested
+        
+        * Hourly
+        * Daily
+    * Remove Text - If RSS cuts off a story, this allows for a custom message to direct users further
+    * News Category - Additional category appended to all feed items
+    * Description Template - Allows all feed items to use a specific template for response::
 
-* Ability to refresh news has options for daily or hourly. 
-* It is recommended the frequently refresh new content being made available to the community.
-
--------------
-Empty Message
--------------
-
-* This message is what Alexa Communicates when there  is no new content to give.
-
------------------
-Days to Reference
------------------
-
-* Allows Alexa to search further than the day content was requested, upon finding no new content for that day.
-
------------
-Remove Text
------------
-
-* If RSS cuts off a story, this text box allows for a custom message to direct users further.
-
-----------------
-Sync Data Button
-----------------
-
-* Sync most updated data.
-
---------------
-Clear All Data
---------------
-
-* Clears all data. 
+        Location: {{address}}
+        {{description}}
 
 ===========
 Events Feed
@@ -148,8 +150,10 @@ Events Feed
 
 .. image:: ./images/events_feed.png
 
-
 .. image:: ./images/new_events_feed.png
+
+
+See `News Feed`_
 
 =====
 Slots
@@ -172,6 +176,16 @@ See Slots Settings Guides here: :ref:`Settings Guides`
 =======
 Intents
 =======
+
+.. image:: ./images/settings_intent.gif
+
+Intents allows the manager to create new intents to answer specific user questions to a particular skill. Intents are the mad-lib, or fill-in-the-blank templates that assist in answering user's needs. A skill made for locations may need a new intent.
+
+Examples::
+    
+    `Maps`, and maybe `Directions`
+    `Maps` may answer questions about where things are located 
+    `Directions` still deals with locations but instead answers questions about how to get to those locations
 
 ===========
 Integration

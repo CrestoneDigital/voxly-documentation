@@ -116,4 +116,27 @@ Salesforce
 =================
 Socrata Connector
 =================
+Create a Socrata Connector
+
+.. image:: ./images/socrata_integration.gif
+
+Username and password are not required.
+
+.. image:: ./images/create_socrata_query.gif
+
+#. To get the dataset
+    * Go to Socrata dataset
+    * Click on **API** from the group of buttons at the top right
+
+    .. image:: ./images/socrata_api.png
+
+    * Copy the 4x4 letter set within the API Endpoint URL `ex.) abcd-efgh`
+    * In the query, choose which fields, or columns, are needed to answer the user's question.
+
+    .. image:: ./images/account_number_socrata.png
+
+    .. image:: ./images/socrata_query.png
+
+The query is a basic select statement. Select what columns will be required to answer the user's questions.
+
 `Socrata SOQL Help <https://dev.socrata.com/docs/queries/select.html>`_
