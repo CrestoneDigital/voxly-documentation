@@ -52,3 +52,5 @@ Create iCal Feed
 
 #. Verify that events have synced by navigating to **Events** in left menu
 #. Clear feed by clicking the 'no symbol', which is a circle with a slash
+
+.. image:: ./images/ical_feed.gif
