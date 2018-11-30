@@ -75,7 +75,7 @@ Create News Records
 
 #. Save
 
-**Note**: Only custom news can be edited at the current time. Feed news are not editable.
+**Note**: Only custom news can be edited. Feed news are not editable at this time.
 
 .. image:: ./images/create_news.gif
 
@@ -97,6 +97,6 @@ Create Events Records
 
 #. Save
 
-    **Note**: Only custom events can be edited at the current time. Feed events are not editable.   
+    **Note**: Only custom events can be edited. Feed events are not editable at this time.   
 
 .. image:: ./images/create_event.gif
