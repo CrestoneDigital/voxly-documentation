@@ -4,8 +4,7 @@ Examples
 .. toctree::
    :maxdepth: 2
 
-   newsExamples
-   eventsExamples
+   news_and_eventsExamples
    interactionExamples
 
 

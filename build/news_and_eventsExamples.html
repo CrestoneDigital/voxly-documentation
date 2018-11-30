@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Events Examples &mdash; VoxlyDocs 0.0.1 documentation</title>
+  <title>News &amp; Events Examples &mdash; VoxlyDocs 0.0.1 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="top" title="VoxlyDocs 0.0.1 documentation" href="index.html"/>
         <link rel="up" title="Examples" href="examples.html"/>
         <link rel="next" title="Interaction Examples" href="interactionExamples.html"/>
-        <link rel="prev" title="News Examples" href="newsExamples.html"/> 
+        <link rel="prev" title="Examples" href="examples.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -89,9 +89,10 @@
 <li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="examples.html">Examples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="newsExamples.html">News Examples</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Events Examples</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-ical-feed">Create iCal Feed</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">News &amp; Events Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-rss-or-ical-feed">Create RSS or iCal Feed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-news-records">Create News Records</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-events-records">Create Events Records</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="interactionExamples.html">Interaction Examples</a></li>
@@ -135,11 +136,11 @@
       
           <li><a href="examples.html">Examples</a> &raquo;</li>
       
-    <li>Events Examples</li>
+    <li>News &amp; Events Examples</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/eventsExamples.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/news_and_eventsExamples.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -149,25 +150,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="events-examples">
-<h1>Events Examples<a class="headerlink" href="#events-examples" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="create-ical-feed">
-<h2>Create iCal Feed<a class="headerlink" href="#create-ical-feed" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="news-events-examples">
+<h1>News &amp; Events Examples<a class="headerlink" href="#news-events-examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="create-rss-or-ical-feed">
+<h2>Create RSS or iCal Feed<a class="headerlink" href="#create-rss-or-ical-feed" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Navigate to the Events Feed tab</p>
+<li><p class="first">Navigate to the News Feed/Events Feed tab</p>
 <blockquote>
 <div><ul class="simple">
 <li>Located in <strong>Settings</strong></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">Click the <strong>+ Calendar Feed</strong> button in the bottom right corner</p>
+<li><p class="first">Click the <strong>+ Feed</strong> button in the bottom right corner</p>
 </li>
 <li><p class="first">Type in a title representative of the feed</p>
 </li>
-<li><p class="first">Paste in the URL of the iCalendar Feed</p>
+<li><p class="first">Paste in the URL of the</p>
 <blockquote>
 <div><ul class="simple">
+<li>iCalendar Feed</li>
+<li>RSS Feed</li>
 <li>The button at the right will open or download the URL link</li>
 </ul>
 </div></blockquote>
@@ -192,6 +195,7 @@
 <div><ul class="simple">
 <li>Optional</li>
 <li>Events Categories can be added in <strong>Slots</strong> &gt; <strong>EVENT_CATEGORY</strong> Predefined Slot found towards the bottom</li>
+<li>News Categories can be added in <strong>Slots</strong> &gt; <strong>NEWS_CATEGORY</strong> Predefined Slot</li>
 </ul>
 </div></blockquote>
 </li>
@@ -202,6 +206,7 @@
 </ul>
 <p>Template Example:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">## iCal has fields time, location, description, title</span>
+<span class="c1">## RSS example works similarly</span>
 <span class="c1">## This is just an example, fields may be named differently</span>
 <span class="n">Location</span><span class="p">:</span> <span class="p">{{</span><span class="n">location</span><span class="p">}}</span>
 <span class="p">{{</span><span class="n">description</span><span class="p">}}</span> <span class="n">The</span> <span class="n">event</span> <span class="n">will</span> <span class="n">take</span> <span class="n">place</span> <span class="n">at</span> <span class="p">{{</span><span class="n">time</span><span class="p">}}</span><span class="o">.</span>
@@ -214,9 +219,9 @@
 </li>
 <li><p class="first">Click Save</p>
 </li>
-<li><p class="first">The new feed will now be in the Calendar Feed grid</p>
+<li><p class="first">The new feed will now be in the feed grid</p>
 </li>
-<li><p class="first">Sync feed to see events in events grid</p>
+<li><p class="first">Sync feed to see events in events grid, or news in news grid</p>
 <blockquote>
 <div><ul class="simple">
 <li>Click sync button in row of feed</li>
@@ -224,12 +229,65 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">Verify that events have synced by navigating to <strong>Events</strong> in left menu</p>
+<li><p class="first">Verify that feed has been synced by navigating to <strong>Events</strong>/<strong>News</strong> in left menu</p>
 </li>
 <li><p class="first">Clear feed by clicking the &#8216;no symbol&#8217;, which is a circle with a slash</p>
 </li>
 </ol>
 <img alt="_images/ical_feed.gif" src="_images/ical_feed.gif" />
+</div>
+<div class="section" id="create-news-records">
+<h2>Create News Records<a class="headerlink" href="#create-news-records" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Navigate to <strong>News</strong> in the left menu</p>
+</li>
+<li><p class="first">Click <strong>+ News</strong> in the bottom right</p>
+</li>
+<li><p class="first">Fill out fields</p>
+<blockquote>
+<div><ul class="simple">
+<li>Title</li>
+<li>Link - is applicable</li>
+<li>Publish Date - the date that will be relevant</li>
+<li>Voice and Display Message</li>
+<li>News Category - will help narrow a user&#8217;s news question; can be set in Slots as <strong>NEWS_CATEGORY</strong></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Save</p>
+</li>
+</ol>
+<p><strong>Note</strong>: Only custom news can be edited. Feed news are not editable at this time.</p>
+<img alt="_images/create_news.gif" src="_images/create_news.gif" />
+</div>
+<div class="section" id="create-events-records">
+<h2>Create Events Records<a class="headerlink" href="#create-events-records" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Navigate to <strong>Events</strong> in left menu</p>
+</li>
+<li><p class="first">Click <strong>+ Event</strong> in the bottom right</p>
+</li>
+<li><p class="first">Fill out fields</p>
+<blockquote>
+<div><ul class="simple">
+<li>Title</li>
+<li>Category - can be set in slots as <strong>EVENT_CATEGORY</strong></li>
+<li>Area - city, general locations, can be set in Slots as <strong>CITY</strong></li>
+<li>Location - address or specific location</li>
+<li>Voice and Display Message</li>
+<li>Start Date</li>
+<li>End Date</li>
+<li>Approved - approval will allow it to be a searchable event</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Save</p>
+<blockquote>
+<div><p><strong>Note</strong>: Only custom events can be edited. Feed events are not editable at this time.</p>
+</div></blockquote>
+</li>
+</ol>
+<img alt="_images/create_event.gif" src="_images/create_event.gif" />
 </div>
 </div>
 
@@ -243,7 +301,7 @@
         <a href="interactionExamples.html" class="btn btn-neutral float-right" title="Interaction Examples" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="newsExamples.html" class="btn btn-neutral" title="News Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="examples.html" class="btn btn-neutral" title="Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

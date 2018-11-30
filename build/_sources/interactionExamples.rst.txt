@@ -87,8 +87,6 @@ For the query, type out::
 
     Select C, D, E where E = "BRANDY"
 
-
-
 ======
 Lambda
 ======
