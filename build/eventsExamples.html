@@ -90,7 +90,10 @@
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="examples.html">Examples</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="newsExamples.html">News Examples</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Events Examples</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Events Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-ical-feed">Create iCal Feed</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="interactionExamples.html">Interaction Examples</a></li>
 </ul>
 </li>
@@ -148,6 +151,85 @@
             
   <div class="section" id="events-examples">
 <h1>Events Examples<a class="headerlink" href="#events-examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="create-ical-feed">
+<h2>Create iCal Feed<a class="headerlink" href="#create-ical-feed" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Navigate to the Events Feed tab</p>
+<blockquote>
+<div><ul class="simple">
+<li>Located in <strong>Settings</strong></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Click the <strong>+ Calendar Feed</strong> button in the bottom right corner</p>
+</li>
+<li><p class="first">Type in a title representative of the feed</p>
+</li>
+<li><p class="first">Paste in the URL of the iCalendar Feed</p>
+<blockquote>
+<div><ul class="simple">
+<li>The button at the right will open or download the URL link</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Choose the refresh frequency</p>
+<blockquote>
+<div><ul class="simple">
+<li>Daily</li>
+<li>Hourly</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Add a <cite>Remove Text</cite> sequence if necessary</p>
+<blockquote>
+<div><ul class="simple">
+<li>Optional</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Add any additional categories to be associated with this feed</p>
+<blockquote>
+<div><ul class="simple">
+<li>Optional</li>
+<li>Events Categories can be added in <strong>Slots</strong> &gt; <strong>EVENT_CATEGORY</strong> Predefined Slot found towards the bottom</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Add a template that will be applied for all feed items</p>
+<blockquote>
+<div><ul class="simple">
+<li>Optional</li>
+</ul>
+<p>Template Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">## iCal has fields time, location, description, title</span>
+<span class="c1">## This is just an example, fields may be named differently</span>
+<span class="n">Location</span><span class="p">:</span> <span class="p">{{</span><span class="n">location</span><span class="p">}}</span>
+<span class="p">{{</span><span class="n">description</span><span class="p">}}</span> <span class="n">The</span> <span class="n">event</span> <span class="n">will</span> <span class="n">take</span> <span class="n">place</span> <span class="n">at</span> <span class="p">{{</span><span class="n">time</span><span class="p">}}</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Each event will now look like the following example:</p>
+<p><strong>Location: PACE Center</strong>
+<strong>Get into the holiday spirit as the Chorale and the Symphony treat you to an evening of traditional carols, songs, and a few surprises. The event will take place at 7:30-9:30.</strong></p>
+</div></blockquote>
+</li>
+<li><p class="first">Click Save</p>
+</li>
+<li><p class="first">The new feed will now be in the Calendar Feed grid</p>
+</li>
+<li><p class="first">Sync feed to see events in events grid</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click sync button in row of feed</li>
+<li>Toast Message will appear when feed has been synced</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Verify that events have synced by navigating to <strong>Events</strong> in left menu</p>
+</li>
+<li><p class="first">Clear feed by clicking the &#8216;no symbol&#8217;, which is a circle with a slash</p>
+</li>
+</ol>
+</div>
 </div>
 
 
