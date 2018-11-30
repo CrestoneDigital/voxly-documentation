@@ -58,3 +58,45 @@ Create RSS or iCal Feed
 #. Clear feed by clicking the 'no symbol', which is a circle with a slash
 
 .. image:: ./images/ical_feed.gif
+
+
+Create News Records
+-------------------
+
+#. Navigate to **News** in the left menu
+#. Click **+ News** in the bottom right
+#. Fill out fields
+    
+    * Title
+    * Link - is applicable
+    * Publish Date - the date that will be relevant
+    * Voice and Display Message
+    * News Category - will help narrow a user's news question; can be set in Slots as **NEWS_CATEGORY**
+
+#. Save
+
+**Note**: Only custom news can be edited at the current time. Feed news are not editable.
+
+.. image:: ./images/create_news.gif
+
+Create Events Records
+---------------------
+
+#. Navigate to **Events** in left menu
+#. Click **+ Event** in the bottom right
+#. Fill out fields
+
+    * Title
+    * Category - can be set in slots as **EVENT_CATEGORY**
+    * Area - city, general locations, can be set in Slots as **CITY**
+    * Location - address or specific location
+    * Voice and Display Message
+    * Start Date
+    * End Date
+    * Approved - approval will allow it to be a searchable event
+
+#. Save
+
+    **Note**: Only custom events can be edited at the current time. Feed events are not editable.   
+
+.. image:: ./images/create_event.gif
