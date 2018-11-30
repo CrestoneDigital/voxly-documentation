@@ -1,16 +1,18 @@
-Events Examples
-===============
+News & Events Examples
+======================
 
-Create iCal Feed
-----------------
-#. Navigate to the Events Feed tab
+Create RSS or iCal Feed
+-----------------------
+#. Navigate to the News Feed/Events Feed tab
 
     * Located in **Settings**
 
-#. Click the **+ Calendar Feed** button in the bottom right corner
+#. Click the **+ Feed** button in the bottom right corner
 #. Type in a title representative of the feed
-#. Paste in the URL of the iCalendar Feed
+#. Paste in the URL of the
 
+    * iCalendar Feed
+    * RSS Feed
     * The button at the right will open or download the URL link
 
 #. Choose the refresh frequency
@@ -26,6 +28,7 @@ Create iCal Feed
 
     * Optional
     * Events Categories can be added in **Slots** > **EVENT_CATEGORY** Predefined Slot found towards the bottom
+    * News Categories can be added in **Slots** > **NEWS_CATEGORY** Predefined Slot
 
 #. Add a template that will be applied for all feed items
     
@@ -34,6 +37,7 @@ Create iCal Feed
     Template Example::
 
         ## iCal has fields time, location, description, title
+        ## RSS example works similarly
         ## This is just an example, fields may be named differently
         Location: {{location}}
         {{description}} The event will take place at {{time}}.
@@ -44,13 +48,13 @@ Create iCal Feed
     **Get into the holiday spirit as the Chorale and the Symphony treat you to an evening of traditional carols, songs, and a few surprises. The event will take place at 7:30-9:30.**
 
 #. Click Save
-#. The new feed will now be in the Calendar Feed grid
-#. Sync feed to see events in events grid
+#. The new feed will now be in the feed grid
+#. Sync feed to see events in events grid, or news in news grid
 
     * Click sync button in row of feed
     * Toast Message will appear when feed has been synced
 
-#. Verify that events have synced by navigating to **Events** in left menu
+#. Verify that feed has been synced by navigating to **Events**/**News** in left menu
 #. Clear feed by clicking the 'no symbol', which is a circle with a slash
 
 .. image:: ./images/ical_feed.gif
