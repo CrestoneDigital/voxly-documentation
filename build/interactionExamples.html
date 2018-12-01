@@ -36,7 +36,7 @@
     <link rel="top" title="VoxlyDocs 0.0.1 documentation" href="index.html"/>
         <link rel="up" title="Examples" href="examples.html"/>
         <link rel="next" title="Marketing" href="marketing.html"/>
-        <link rel="prev" title="Events Examples" href="eventsExamples.html"/> 
+        <link rel="prev" title="News &amp; Events Examples" href="news_and_eventsExamples.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -89,8 +89,7 @@
 <li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="examples.html">Examples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="newsExamples.html">News Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eventsExamples.html">Events Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="news_and_eventsExamples.html">News &amp; Events Examples</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Interaction Examples</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#carto-connector">Carto Connector</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#airtable">Airtable</a></li>
@@ -223,7 +222,7 @@ The spreadsheet ID is highlighted in the Google Sheet URL. The value is followed
 </div>
 <p>The GID will change when switching between table tabs which are located at the bottom left. To see, find the gid in the url, and see them change when switching between two or three different tables.</p>
 <p>Navigate to the interactions. Drag and drop the Google Sheet Connector that was just created.
-There will be a connector name, if this is the second connector within an interation, it may be called <cite>c2</cite> already.
+There will be a connector title, if this is the second connector within an interaction, it may be called <cite>c2</cite> already.
 There is a Google Grid ID text field, this is where to copy and paste the GID that was found from the URL above.</p>
 <p>For the query, type out:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Select</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span> <span class="n">where</span> <span class="n">E</span> <span class="o">=</span> <span class="s2">&quot;BRANDY&quot;</span>
@@ -273,6 +272,10 @@ There is a Google Grid ID text field, this is where to copy and paste the GID th
 </li>
 </ol>
 <p>The query is a basic select statement. Select what columns will be required to answer the user&#8217;s questions.</p>
+<p>To use user input or settings:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span> <span class="n">WHERE</span> <span class="n">Account_Number</span> <span class="o">=</span> <span class="s2">&quot;{{settings.account_number}}&quot;</span>
+</pre></div>
+</div>
 <p><a class="reference external" href="https://dev.socrata.com/docs/queries/select.html">Socrata SOQL Help</a></p>
 </div>
 </div>
@@ -287,7 +290,7 @@ There is a Google Grid ID text field, this is where to copy and paste the GID th
         <a href="marketing.html" class="btn btn-neutral float-right" title="Marketing" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="eventsExamples.html" class="btn btn-neutral" title="Events Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="news_and_eventsExamples.html" class="btn btn-neutral" title="News &amp; Events Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

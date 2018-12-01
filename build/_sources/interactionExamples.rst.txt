@@ -80,7 +80,7 @@ Example::
 The GID will change when switching between table tabs which are located at the bottom left. To see, find the gid in the url, and see them change when switching between two or three different tables.
 
 Navigate to the interactions. Drag and drop the Google Sheet Connector that was just created.
-There will be a connector name, if this is the second connector within an interation, it may be called `c2` already. 
+There will be a connector title, if this is the second connector within an interaction, it may be called `c2` already.
 There is a Google Grid ID text field, this is where to copy and paste the GID that was found from the URL above.
 
 For the query, type out::
@@ -136,5 +136,9 @@ Username and password are not required.
     .. image:: ./images/socrata_query.png
 
 The query is a basic select statement. Select what columns will be required to answer the user's questions.
+
+To use user input or settings::
+
+    SELECT * WHERE Account_Number = "{{settings.account_number}}"
 
 `Socrata SOQL Help <https://dev.socrata.com/docs/queries/select.html>`_
