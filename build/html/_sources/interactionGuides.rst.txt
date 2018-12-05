@@ -1,9 +1,9 @@
 Interaction Guides
 ==================
 
-=============================
-Create Interaction and Answer
-=============================
+===============================
+Create Interaction and Response
+===============================
 
 #. Choose interaction type
     * Located in the bottom right, press and choose the interaction type
