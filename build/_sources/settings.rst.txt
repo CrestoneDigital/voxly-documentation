@@ -1,6 +1,5 @@
 Settings
 ========
-Include paragraph about settings
 
 ============
 Manage Users
