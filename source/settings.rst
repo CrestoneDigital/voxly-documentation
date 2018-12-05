@@ -111,9 +111,9 @@ If manager is responsible for third party account, within Amazon Developer Alexa
 
 Once all information is filled out, **Upload Account Link** to the Amazon Developer Skill
 
-=========
-News Feed
-=========
+==========
+News Feeds
+==========
 
 .. image:: ./images/news_feed.png
 
@@ -144,16 +144,16 @@ News Feed
         Location: {{address}}
         {{description}}
 
-===========
-Events Feed
-===========
+============
+Events Feeds
+============
 
 .. image:: ./images/events_feed.png
 
 .. image:: ./images/new_events_feed.png
 
 
-See `News Feed`_
+See `News Feeds`_
 
 =====
 Slots
