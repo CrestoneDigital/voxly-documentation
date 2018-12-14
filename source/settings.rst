@@ -80,6 +80,8 @@ General Tab
 Account Linking
 ===============
 
+.. image:: ./images/account_link_page.png
+
 .. image:: ./images/account_link.gif
 
 Account Linking is for linking to third party connectors such as spotify.
@@ -103,6 +105,8 @@ Account Linking is for linking to third party connectors such as spotify.
     * Default Token Expiration - Defaults to 3500 milliseconds
 
 If manager is responsible for third party account, within Amazon Developer Alexa Skill > Build > Account Link will find the redirect URIs that are needed in the Third Party Developer Account
+
+Or at the very bottom of the Account Linking in the Manager, there will be three URLs, these are to be added to your Spotify account. It tells Spotify where to redirect after the user allows the skill to use their information.
 
 .. image:: ./images/redirect_uri.png
 
