@@ -238,6 +238,14 @@ Handlebars::
 Tests
 =====
 
+.. image:: ./images/test_interaction.gif
+
+To test, click on the Test button in the top left of the interaction. 
+
+When you have a test record, click the lightning bolt. This will take a moment to run the test and then will pop up a window with the response. The lightning bolts here look like the connectors from creating one in the Flow Editor. 
+
+Click on each bubble inside the Test Response Window, and it'll show whether there will an error or the response of the created interaction. If there is an error there will be a little triangle with an exclamation. The response will also have the little yellow triangle flag.
+
 =============
 Helpful Hints
 =============
