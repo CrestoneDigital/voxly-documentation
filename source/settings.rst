@@ -108,6 +108,8 @@ If manager is responsible for third party account, within Amazon Developer Alexa
 
 Or at the very bottom of the Account Linking in the Manager, there will be three URLs, these are to be added to your Spotify account. It tells Spotify where to redirect after the user allows the skill to use their information.
 
+The URLs will change based on the Type of account link.
+
 .. image:: ./images/redirect_uri.png
 
 .. image:: ./images/third_party_account_link.gif
